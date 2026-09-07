@@ -1,6 +1,6 @@
 # 🎨 Especificações de Interface e Protótipo (Stitch)
 
-Diretrizes de design e estrutura visual da aplicação **Minha História Rock**.
+Diretrizes de design e estrutura visual da aplicação **Live** (*Décadas de história a poucos metros dos amplificadores*).
 
 ---
 
@@ -20,7 +20,7 @@ Diretrizes de design e estrutura visual da aplicação **Minha História Rock**.
 ## 2. Componentes da Interface
 
 ### A. Cabeçalho (Header)
-- Identidade visual com o título "Minha História Rock".
+- Identidade visual com o título "Live" e subtítulo "Décadas de história a poucos metros dos amplificadores".
 - Barra de busca global (filtra por banda, cidade, local ou ano).
 - Filtros rápidos em pills clicáveis (Anos, Cidades, Festivais).
 - Badges de estatísticas consolidadas (Total de shows, bandas vistas, festivais e cidades).
@@ -48,7 +48,7 @@ Diretrizes de design e estrutura visual da aplicação **Minha História Rock**.
 Copie o prompt abaixo para prototipar a interface no Stitch:
 
 ```text
-Crie o protótipo de alta fidelidade para uma aplicação web moderna chamada "Minha História Rock", um diário visual e cronológico interativo de todos os shows e festivais de música que já participei.
+Crie o protótipo de alta fidelidade para uma aplicação web moderna chamada "Live" (com o subtítulo "Décadas de história a poucos metros dos amplificadores"), um diário visual e cronológico interativo de todos os shows e festivais de música que já participei.
 
 Estilo Visual e Tema:
 - Tema Dark Mode moderno e imersivo (tons escuros como grafite/carvão, detalhes em roxo/neon ou amarelo âmbar para dar clima de palco/iluminação de show).
@@ -58,7 +58,7 @@ Estilo Visual e Tema:
 Estrutura da Interface:
 
 1. Cabeçalho (Header):
-   - Título/Logo: "Minha História Rock".
+   - Título/Logo: "Live" (com subtítulo "Décadas de história a poucos metros dos amplificadores").
    - Barra de busca global rápida (para buscar por banda, cidade, local ou ano).
    - Filtros rápidos em pills/chips clicáveis: Anos (ex: 2026, 2024, 2019...), Cidades, e Festivais.
    - Painel de estatísticas resumidas no topo (Stat Badges): "48 Shows", "32 Bandas Diferentes", "6 Cidades", "12 Festivais".
@@ -86,3 +86,4 @@ Estrutura da Interface:
      * Seção de "Notícias e Críticas": links clicáveis sobre a repercussão do show.
 
 Apresente a tela principal da timeline com cards de exemplo bem preenchidos e o modal de detalhes aberto para validação da experiência.
+```

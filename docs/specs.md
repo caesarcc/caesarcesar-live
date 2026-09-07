@@ -1,6 +1,6 @@
 # 📐 Arquitetura e Especificações Técnicas
 
-Este documento reúne o planejamento de engenharia e modelagem de dados para o projeto **Minha História Rock**.
+Este documento reúne o planejamento de engenharia e modelagem de dados para o projeto **Live** (*Décadas de história a poucos metros dos amplificadores*).
 
 ---
 

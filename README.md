@@ -1,8 +1,10 @@
-# 🎸 Minha História Rock
+# 🎸 Live
+
+### *Décadas de história a poucos metros dos amplificadores*
 
 Diário visual, interativo e cronológico de todos os shows e festivais de música que assisti ao vivo. O projeto reúne histórias de bastidores, fotos, vídeos (próprios e de terceiros da plateia), registros de ingressos e matérias jornalísticas de época.
 
-> **Deploy planejado:** [rock.caesarcesar.com.br](https://rock.caesarcesar.com.br)
+> **Deploy planejado:** [live.caesarcesar.com.br](https://live.caesarcesar.com.br)
 
 ---
 
@@ -28,7 +30,7 @@ Diário visual, interativo e cronológico de todos os shows e festivais de músi
 ## 📂 Estrutura do Repositório
 
 ```text
-minha-historia-rock/
+live/
 ├── docs/
 │   ├── specs.md            # Arquitetura, modelo de dados e decisões técnicas
 │   └── interface-specs.md  # Especificação de UI, componentes e prompt do Stitch
@@ -38,3 +40,4 @@ minha-historia-rock/
 │   └── assets/shows/       # Fotos, ingressos escaneados e pôsteres
 ├── src/                    # Código-fonte da aplicação
 └── README.md
+```
