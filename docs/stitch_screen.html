@@ -1,0 +1,1081 @@
+<!DOCTYPE html><html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<!-- Gothic/Brutal Thrash Metal Fonts: Anton, Chivo, JetBrains Mono, Cinzel Decorative -->
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Chivo:ital,wght@0,300;0,400;0,600;0,700;1,400;1,700&amp;family=JetBrains+Mono:wght@400;600;700;800&amp;family=Cinzel+Decorative:wght@700;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-high": "#2e292a",
+            "on-secondary-fixed": "#2e1500",
+            "outline-variant": "#5c403d",
+            "primary": "#ffb3ac",
+            "secondary": "#ffb77a",
+            "surface-container-low": "#191213",
+            "surface-variant": "#393334",
+            "secondary-fixed-dim": "#ffb77a",
+            "inverse-primary": "#bc131c",
+            "on-tertiary-fixed": "#301400",
+            "surface": "#120d0e",
+            "on-background": "#eae0e1",
+            "surface-container": "#1f1718",
+            "on-primary-fixed-variant": "#93000f",
+            "primary-container": "#b50a18",
+            "secondary-container": "#ac5e00",
+            "on-primary-container": "#ffc3bc",
+            "error": "#ffb4ab",
+            "tertiary-fixed-dim": "#f7b98e",
+            "on-secondary": "#4c2700",
+            "on-primary-fixed": "#410003",
+            "on-secondary-container": "#fff7f3",
+            "on-tertiary-container": "#ffc59e",
+            "on-tertiary": "#4c2707",
+            "on-error": "#690005",
+            "inverse-surface": "#eae0e1",
+            "tertiary-fixed": "#ffdcc5",
+            "on-surface-variant": "#e5bdb9",
+            "on-secondary-fixed-variant": "#6d3a00",
+            "on-primary": "#680007",
+            "primary-fixed-dim": "#ffb3ac",
+            "surface-container-highest": "#342628",
+            "surface-tint": "#ffb3ac",
+            "secondary-fixed": "#ffdcc2",
+            "on-tertiary-fixed-variant": "#673d1b",
+            "surface-container-lowest": "#0b0708",
+            "inverse-on-surface": "#352f30",
+            "primary-fixed": "#ffdad6",
+            "background": "#0e090a",
+            "on-error-container": "#ffdad6",
+            "surface-bright": "#3e3839",
+            "on-surface": "#eae0e1",
+            "tertiary-container": "#7d4f2c",
+            "outline": "#ac8885",
+            "error-container": "#93000a",
+            "tertiary": "#f7b98e",
+            "surface-dim": "#120d0e",
+            "blood-dark": "#520207",
+            "blood-fire": "#e61c24",
+            "ember": "#ff5429"
+          },
+          fontFamily: {
+            "anton": ["Anton", "sans-serif"],
+            "chivo": ["Chivo", "sans-serif"],
+            "mono": ["JetBrains Mono", "monospace"],
+            "cinzel": ["Cinzel Decorative", "serif"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #0e090a;
+        color: #eae0e1;
+      }
+      body {
+        overscroll-behavior-y: none;
+      }
+    }
+    .custom-scroll::-webkit-scrollbar {
+      height: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #140f10;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #b50a18;
+      border-radius: 3px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb:hover {
+      background: #e61c24;
+    }
+    .pentagram-bg {
+      background-image: radial-gradient(circle at 50% 30%, rgba(181, 10, 24, 0.18) 0%, rgba(14, 9, 10, 0.98) 70%);
+    }
+    .metal-border {
+      border: 1px solid rgba(181, 10, 24, 0.45);
+      box-shadow: 0 0 20px rgba(181, 10, 24, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.8);
+    }
+    .blood-glow {
+      box-shadow: 0 0 25px rgba(230, 28, 36, 0.45);
+    }
+    .text-blood-shadow {
+      text-shadow: 0 2px 14px rgba(181, 10, 24, 0.9), 0 0 30px rgba(255, 84, 41, 0.5);
+    }
+  </style>
+</head>
+<body class="bg-background font-chivo text-on-surface antialiased selection:bg-primary-container selection:text-white min-h-screen relative overflow-x-hidden" data-mode="connect">
+<!-- TOP BRUTALIST METALLIC HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#0b0708]/95 backdrop-blur-xl border-b border-primary-container/40 shadow-[0_4px_24px_rgba(0,0,0,0.85)]">
+<div class="h-20 w-full max-w-[1500px] mx-auto px-4 md:px-8 flex items-center justify-between gap-4">
+<!-- Brand & Metal Logo -->
+<div class="flex items-center gap-3 shrink-0">
+<img alt="Horned Skull Metal Emblem" class="h-14 w-14 object-contain filter drop-shadow-[0_0_12px_rgba(181,10,24,0.8)] hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB43fUt0m75QrVeOoQL0mA8Bh_S1TyM-816u69Iw3CTF03QgzAwXN_GzKsHeenDaLxpHzg6E6TgoEjrOIGEwRDf2Rt_S65wx4bZspZfxP8GA-n_oA3qK-4Mh9z4jsXzIbIlWONTgcv4AEazzL5thJq7BTOq3veQrI7-kNsjIXYHu-eMTjNgpzOMScC-PWgqW-0A--aGV1PEkr6rRTpgMXqHSvxbhR_huMF56otJaP4yEk4dYslpvho">
+<div class="flex flex-col"><span class="font-anton text-2xl md:text-3xl tracking-wider text-[#ffcfcb] uppercase leading-none flex items-center gap-2">
+            LIVE
+            <span class="text-xs px-2 py-0.5 rounded bg-primary-container text-white font-mono tracking-widest font-bold uppercase border border-blood-fire">Vault 1994-2026</span>
+</span>
+<span class="font-mono text-[10px] text-tertiary tracking-[0.25em] uppercase mt-0.5">live.caesarcesar.com.br</span></div>
+</div>
+<!-- Quick Search Bar & Metal Filter Chips -->
+<div class="hidden lg:flex flex-1 max-w-xl mx-auto flex-col gap-1.5">
+<div class="relative flex items-center w-full">
+<span class="material-symbols-outlined absolute left-3 text-primary text-[20px] pointer-events-none">search</span>
+<input class="w-full bg-[#170f10] text-on-surface font-mono text-xs pl-10 pr-10 py-2 rounded-lg border border-outline-variant/60 outline-none focus:border-blood-fire focus:ring-1 focus:ring-blood-fire placeholder:text-outline/70 transition-all shadow-[inset_0_2px_6px_rgba(0,0,0,0.8)]" placeholder="Buscar por banda, festival, cidade ou ano (ex: Slayer, 1994, Sepultura)..." type="text">
+<span class="material-symbols-outlined absolute right-3 text-outline text-[18px] cursor-pointer hover:text-primary transition-colors">tune</span>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-0.5">
+<span class="text-outline text-[10px] font-mono uppercase tracking-wider shrink-0">Gênero &amp; Tipo:</span>
+<button class="px-2.5 py-0.5 rounded text-[11px] font-mono uppercase bg-primary-container text-white border border-blood-fire hover:bg-blood-fire transition-all shadow-sm" type="button">Thrash Metal</button>
+<button class="px-2.5 py-0.5 rounded text-[11px] font-mono uppercase bg-[#1f1718] text-on-surface-variant hover:text-white border border-outline-variant/40 transition-all" type="button">Heavy Clássico</button>
+<button class="px-2.5 py-0.5 rounded text-[11px] font-mono uppercase bg-[#1f1718] text-on-surface-variant hover:text-white border border-outline-variant/40 transition-all" type="button">Death Metal</button>
+<button class="px-2.5 py-0.5 rounded text-[11px] font-mono uppercase bg-[#1f1718] text-on-surface-variant hover:text-white border border-outline-variant/40 transition-all" type="button">Festivais</button>
+<button class="px-2.5 py-0.5 rounded text-[11px] font-mono uppercase bg-[#1f1718] text-on-surface-variant hover:text-white border border-outline-variant/40 transition-all" type="button">Brasil / Tour</button>
+</div>
+</div>
+<!-- Quick Metrics Counters -->
+<div class="hidden 2xl:flex items-center gap-2 shrink-0">
+<div class="flex items-center gap-1.5 bg-[#170f10] border border-primary-container/40 px-3 py-1.5 rounded-lg shadow-md">
+<span class="material-symbols-outlined text-primary text-[18px]">confirmation_number</span>
+<span class="font-anton text-lg text-white">48</span>
+<span class="font-mono text-[10px] text-on-surface-variant uppercase">Shows</span>
+</div>
+<div class="flex items-center gap-1.5 bg-[#170f10] border border-primary-container/40 px-3 py-1.5 rounded-lg shadow-md">
+<span class="material-symbols-outlined text-secondary text-[18px]">groups</span>
+<span class="font-anton text-lg text-white">32</span>
+<span class="font-mono text-[10px] text-on-surface-variant uppercase">Bandas</span>
+</div>
+<div class="flex items-center gap-1.5 bg-[#170f10] border border-primary-container/40 px-3 py-1.5 rounded-lg shadow-md">
+<span class="material-symbols-outlined text-tertiary text-[18px]">location_city</span>
+<span class="font-anton text-lg text-white">6</span>
+<span class="font-mono text-[10px] text-on-surface-variant uppercase">Cidades</span>
+</div>
+<div class="flex items-center gap-1.5 bg-[#170f10] border border-primary-container/40 px-3 py-1.5 rounded-lg shadow-md">
+<span class="material-symbols-outlined text-blood-fire text-[18px]">stadium</span>
+<span class="font-anton text-lg text-white">12</span>
+<span class="font-mono text-[10px] text-on-surface-variant uppercase">Festivais</span>
+</div>
+</div>
+<!-- User & Action Buttons -->
+<div class="flex items-center gap-3 shrink-0">
+<button class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-container text-white font-anton text-sm tracking-wider uppercase hover:bg-blood-fire transition-all border border-blood-fire/80 shadow-[0_0_15px_rgba(181,10,24,0.4)]" onclick="document.getElementById('show-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+<span class="">Registrar Mosh</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-[#170f10] border border-outline-variant/60 flex items-center justify-center text-on-surface hover:text-white hover:border-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+</button>
+<div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-primary-container to-secondary border border-blood-fire flex items-center justify-center cursor-pointer shadow-[0_0_12px_rgba(230,28,36,0.6)]">
+<span class="material-symbols-outlined text-white text-[20px]">skull</span>
+</div>
+</div>
+</div>
+<!-- Secondary Navigation Bar -->
+<div class="w-full bg-[#070405] border-t border-primary-container/20">
+<div class="max-w-[1500px] mx-auto px-4 md:px-8 flex items-center justify-between">
+<nav class="flex items-center gap-1 py-1.5 overflow-x-auto text-xs font-mono uppercase tracking-wider">
+<a class="px-3 py-1 bg-primary-container/80 text-white font-bold rounded border border-blood-fire flex items-center gap-1.5" href="#"><span class="material-symbols-outlined text-[15px]">timeline</span>
+<span class="">Linha do Tempo (1994 - 2026)</span></a>
+<a class="px-3 py-1 text-on-surface-variant hover:text-white hover:bg-[#1a1213] rounded transition-all" href="#">Bandas &amp; Artistas</a>
+<a class="px-3 py-1 text-on-surface-variant hover:text-white hover:bg-[#1a1213] rounded transition-all" href="#">Monsters &amp; Festivais</a>
+<a class="px-3 py-1 text-on-surface-variant hover:text-white hover:bg-[#1a1213] rounded transition-all" href="#">Mapa de Arenas</a>
+<a class="px-3 py-1 text-on-surface-variant hover:text-white hover:bg-[#1a1213] rounded transition-all" href="#">Estatísticas Brutais</a>
+<a class="px-3 py-1 text-on-surface-variant hover:text-white hover:bg-[#1a1213] rounded transition-all" href="#">Ingressos &amp; Memorabilia</a>
+</nav>
+<div class="hidden lg:flex items-center gap-2 text-xs font-mono text-tertiary">
+<span class="w-2 h-2 rounded-full bg-blood-fire animate-ping"></span>
+<span class="">REIGN IN LIVE SOUND: 118 dB MAX</span>
+</div>
+</div>
+</div>
+</header>
+<!-- MAIN THRASH METAL ENVIRONMENT -->
+<main class="w-full pb-24 bg-background pentagram-bg pt-32">
+<!-- Hero / Headline Vault Header & Stat Panels -->
+<div class="max-w-[1500px] mx-auto px-4 md:px-8 mb-8 pt-8">
+<!-- Slayer Hell Aesthetic Ambient Ribbon -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-6 pb-6 border-b border-primary-container/30 pt-2">
+<div>
+<div class="flex items-center gap-2 mb-2"><span class="px-2.5 py-0.5 rounded bg-blood-dark/80 text-primary border border-primary-container/80 font-mono text-[11px] font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-[0_0_10px_rgba(181,10,24,0.4)]">
+<span class="material-symbols-outlined text-[14px] text-blood-fire">local_fire_department</span>
+              Hell Awaits • 32 Anos de Carnificina Sonora
+            </span>
+<span class="font-mono text-xs text-outline">|</span>
+<span class="font-mono text-xs text-secondary font-semibold">1994 — 2026</span></div>
+<h1 class="font-anton text-4xl md:text-6xl text-white tracking-wider uppercase text-blood-shadow leading-none">CAESAR C. CESAR</h1>
+<p class="font-chivo text-on-surface-variant text-sm md:text-base max-w-2xl mt-2 leading-relaxed">Décadas de história a poucos metros dos amplificadores</p>
+</div>
+<!-- High-Impact Stats Cards -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 xl:w-auto w-full">
+<div class="bg-[#140e0f]/90 border border-primary-container/50 rounded-lg p-3 shadow-[0_4px_16px_rgba(0,0,0,0.8)] relative overflow-hidden group hover:border-blood-fire transition-all">
+<div class="absolute -right-3 -bottom-3 text-primary-container/10 group-hover:text-primary-container/20 transition-all font-anton text-6xl select-none">48</div>
+<span class="font-mono text-[10px] uppercase tracking-wider text-outline block">Total Assistido</span>
+<span class="font-anton text-3xl text-white text-blood-shadow">48</span>
+<span class="font-mono text-[11px] text-primary block mt-0.5">Shows Brutais</span>
+</div>
+<div class="bg-[#140e0f]/90 border border-primary-container/50 rounded-lg p-3 shadow-[0_4px_16px_rgba(0,0,0,0.8)] relative overflow-hidden group hover:border-blood-fire transition-all"><div class="absolute -right-3 -bottom-3 text-primary-container/10 group-hover:text-primary-container/20 transition-all font-anton text-6xl select-none">32</div>
+<span class="font-mono text-[10px] uppercase tracking-wider text-outline block">Linha Temporal</span>
+<span class="font-anton text-3xl text-secondary">32 <span class="text-sm font-sans font-normal text-secondary/80">anos</span></span>
+<span class="font-mono text-[11px] text-secondary block mt-0.5">1994 — 2026</span></div>
+<div class="bg-[#140e0f]/90 border border-primary-container/50 rounded-lg p-3 shadow-[0_4px_16px_rgba(0,0,0,0.8)] relative overflow-hidden group hover:border-blood-fire transition-all">
+<div class="absolute -right-3 -bottom-3 text-primary-container/10 group-hover:text-primary-container/20 transition-all font-anton text-6xl select-none">32</div>
+<span class="font-mono text-[10px] uppercase tracking-wider text-outline block">Formações</span>
+<span class="font-anton text-3xl text-tertiary">32</span>
+<span class="font-mono text-[11px] text-tertiary block mt-0.5">Bandas no Palco</span>
+</div>
+<div class="bg-[#140e0f]/90 border border-primary-container/50 rounded-lg p-3 shadow-[0_4px_16px_rgba(0,0,0,0.8)] relative overflow-hidden group hover:border-blood-fire transition-all">
+<div class="absolute -right-3 -bottom-3 text-primary-container/10 group-hover:text-primary-container/20 transition-all font-anton text-6xl select-none">12</div>
+<span class="font-mono text-[10px] uppercase tracking-wider text-outline block">Arenas &amp; Mosh</span>
+<span class="font-anton text-3xl text-blood-fire">12</span>
+<span class="font-mono text-[11px] text-blood-fire block mt-0.5">Grandes Festivais</span>
+</div>
+</div>
+</div>
+</div>
+<!-- PRIMARY FEATURE: HORIZONTAL TIMELINE CONTROLS & RULER (1991 - 2026) -->
+<div class="max-w-[1500px] mx-auto px-4 md:px-8 mb-4">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 bg-[#140e0f]/95 border border-primary-container/60 p-4 rounded-xl shadow-2xl relative">
+<!-- Navigation Decades Jump Pills -->
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-mono text-xs uppercase text-primary tracking-wider font-bold flex items-center gap-1 mr-1">
+<span class="material-symbols-outlined text-[16px] text-blood-fire">fast_forward</span>
+            Salto de Época:
+          </span>
+<button class="decade-btn px-3 py-1 rounded bg-[#201517] text-on-surface-variant hover:text-white hover:bg-primary-container border border-outline-variant/50 font-mono text-xs font-bold uppercase transition-all" onclick="scrollToYear('1994')" type="button">1994 (Primeiro Show)</button>
+<button class="decade-btn px-3 py-1 rounded bg-[#201517] text-on-surface-variant hover:text-white hover:bg-primary-container border border-outline-variant/50 font-mono text-xs font-bold uppercase transition-all" onclick="scrollToYear('2004')" type="button">Anos 2000</button>
+<button class="decade-btn px-3 py-1 rounded bg-[#201517] text-on-surface-variant hover:text-white hover:bg-primary-container border border-outline-variant/50 font-mono text-xs font-bold uppercase transition-all" onclick="scrollToYear('2011')" type="button">Década de 2010</button>
+<button class="decade-btn active px-3 py-1 rounded bg-primary-container text-white border border-blood-fire font-mono text-xs font-bold uppercase shadow-sm" onclick="scrollToYear('2019')" type="button">2019 Despedida</button>
+<button class="decade-btn px-3 py-1 rounded bg-[#201517] text-on-surface-variant hover:text-white hover:bg-primary-container border border-outline-variant/50 font-mono text-xs font-bold uppercase transition-all" onclick="scrollToYear('2026')" type="button">2024 - 2026 (Futuro)</button>
+</div>
+<!-- Horizontal Scroll Left/Right Arrow Triggers -->
+<div class="flex items-center gap-2 self-end md:self-auto">
+<span class="font-mono text-[11px] text-outline uppercase tracking-wider hidden sm:inline">Navegar Régua:</span>
+<button class="p-2 rounded-lg bg-[#1f1718] border border-outline-variant hover:border-blood-fire text-on-surface hover:text-white transition-all shadow-md active:scale-95" onclick="scrollTimeline(-450)" title="Voltar Anos" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="p-2 rounded-lg bg-[#1f1718] border border-outline-variant hover:border-blood-fire text-on-surface hover:text-white transition-all shadow-md active:scale-95" onclick="scrollTimeline(450)" title="Avançar Anos" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+<button class="px-3 py-2 rounded-lg bg-primary-container hover:bg-blood-fire text-white font-mono text-xs uppercase font-bold flex items-center gap-1.5 transition-all border border-blood-fire" onclick="document.getElementById('show-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="">Ver Ficha Aberta</span>
+</button>
+</div>
+</div>
+</div>
+<!-- HORIZONTAL SCRUBBER RULER BAR (1991 - 2026) -->
+<div class="max-w-[1500px] mx-auto px-4 md:px-8 mb-6">
+<div class="relative w-full bg-[#110b0c] border border-primary-container/40 rounded-xl p-4 overflow-x-auto custom-scroll" id="ruler-container">
+<!-- Ambient Glowing Red Line connecting all years -->
+<div class="relative min-w-[1240px] py-2">
+<div class="absolute top-1/2 left-4 right-4 h-1 -translate-y-1/2 bg-gradient-to-r from-blood-dark via-primary-container to-blood-fire rounded-full shadow-[0_0_12px_rgba(230,28,36,0.6)]"></div>
+<!-- Chronological Year Milestones -->
+<div class="relative flex items-center justify-between gap-8 z-10">
+<!-- 1991 Milestone -->
+<button class="flex flex-col items-center group focus:outline-none" onclick="scrollToCard('card-1994')" type="button">
+<span class="font-anton text-sm text-primary group-hover:text-blood-fire transition-colors">1994</span>
+<div class="w-6 h-6 rounded-full bg-blood-dark border-2 border-blood-fire flex items-center justify-center my-1 shadow-[0_0_10px_rgba(230,28,36,0.6)]">
+<span class="material-symbols-outlined text-[13px] text-white">flag</span>
+</div>
+<span class="font-mono text-[10px] text-primary uppercase font-bold">Primeiro Show</span>
+</button>
+<!-- 1994 Milestone (Slayer Monsters of Rock) -->
+<button class="flex flex-col items-center group focus:outline-none" onclick="scrollToCard('card-1994')" type="button">
+<span class="font-anton text-sm text-secondary group-hover:text-blood-fire transition-colors">1994</span>
+<div class="w-6 h-6 rounded-full bg-blood-dark border-2 border-secondary flex items-center justify-center my-1 shadow-[0_0_10px_rgba(255,183,122,0.6)]">
+<span class="material-symbols-outlined text-[13px] text-secondary">skull</span>
+</div>
+<span class="font-mono text-[10px] text-secondary uppercase font-bold">Monsters of Rock</span>
+</button>
+<!-- 1998 Milestone -->
+<button class="flex flex-col items-center group focus:outline-none" onclick="scrollToCard('card-1998')" type="button">
+<span class="font-anton text-xs text-outline group-hover:text-primary transition-colors">1998</span>
+<div class="w-4 h-4 rounded-full bg-[#1c1214] border border-outline group-hover:border-primary flex items-center justify-center my-1">
+<div class="w-1.5 h-1.5 rounded-full bg-outline"></div>
+</div>
+<span class="font-mono text-[10px] text-outline-variant uppercase">South of Heaven</span>
+</button>
+<!-- 2004 Milestone -->
+<button class="flex flex-col items-center group focus:outline-none" onclick="scrollToCard('card-2004')" type="button">
+<span class="font-anton text-xs text-outline group-hover:text-primary transition-colors">2004</span>
+<div class="w-4 h-4 rounded-full bg-[#1c1214] border border-outline group-hover:border-primary flex items-center justify-center my-1">
+<div class="w-1.5 h-1.5 rounded-full bg-outline"></div>
+</div>
+<span class="font-mono text-[10px] text-outline-variant uppercase">Chimera Tour</span>
+</button>
+<!-- 2011 Milestone (Rock in Rio 4) -->
+<button class="flex flex-col items-center group focus:outline-none" onclick="scrollToCard('card-2011')" type="button">
+<span class="font-anton text-sm text-tertiary group-hover:text-white transition-colors">2011</span>
+<div class="w-6 h-6 rounded-full bg-blood-dark border-2 border-tertiary flex items-center justify-center my-1 shadow-[0_0_10px_rgba(247,185,142,0.6)]">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary"></div>
+</div>
+<span class="font-mono text-[10px] text-tertiary uppercase font-bold">Metallica + Slayer</span>
+</button>
+<!-- 2013 Milestone -->
+<button class="flex flex-col items-center group focus:outline-none" onclick="scrollToCard('card-2013')" type="button">
+<span class="font-anton text-xs text-outline group-hover:text-primary transition-colors">2013</span>
+<div class="w-4 h-4 rounded-full bg-[#1c1214] border border-outline group-hover:border-primary flex items-center justify-center my-1">
+<div class="w-1.5 h-1.5 rounded-full bg-outline"></div>
+</div>
+<span class="font-mono text-[10px] text-outline-variant uppercase">Maiden + Slayer</span>
+</button>
+<!-- 2019 Milestone (FEATURED SLAYER FAREWELL - ACTIVE IN FOCUS) -->
+<button class="flex flex-col items-center group focus:outline-none" onclick="scrollToCard('card-2019')" type="button">
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-blood-fire animate-ping"></span>
+<span class="font-anton text-base text-blood-fire font-bold">2019</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-primary-container border-2 border-white flex items-center justify-center my-1 shadow-[0_0_20px_rgba(230,28,36,0.9)] animate-pulse">
+<span class="material-symbols-outlined text-[16px] text-white">local_fire_department</span>
+</div>
+<span class="font-mono text-[11px] text-white bg-blood-dark px-2 py-0.5 rounded border border-blood-fire uppercase font-bold">Slayer Farewell</span>
+</button>
+<!-- 2022 Milestone -->
+<button class="flex flex-col items-center group focus:outline-none" onclick="scrollToCard('card-2022')" type="button">
+<span class="font-anton text-xs text-outline group-hover:text-primary transition-colors">2022</span>
+<div class="w-4 h-4 rounded-full bg-[#1c1214] border border-outline group-hover:border-primary flex items-center justify-center my-1">
+<div class="w-1.5 h-1.5 rounded-full bg-outline"></div>
+</div>
+<span class="font-mono text-[10px] text-outline-variant uppercase">Morumbi Thrash</span>
+</button>
+<!-- 2024 Milestone (Iron Maiden / Sepultura) -->
+<button class="flex flex-col items-center group focus:outline-none" onclick="scrollToCard('card-2024')" type="button">
+<span class="font-anton text-sm text-secondary group-hover:text-white transition-colors">2024</span>
+<div class="w-6 h-6 rounded-full bg-blood-dark border-2 border-secondary flex items-center justify-center my-1 shadow-[0_0_10px_rgba(255,183,122,0.6)]">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+</div>
+<span class="font-mono text-[10px] text-secondary uppercase font-bold">Allianz Parque</span>
+</button>
+<!-- 2026 Milestone (Planejado / Futuro) -->
+<button class="flex flex-col items-center group focus:outline-none" onclick="scrollToCard('card-2026')" type="button">
+<span class="font-anton text-sm text-primary group-hover:text-white transition-colors">2026</span>
+<div class="w-6 h-6 rounded-full bg-[#1e1315] border-2 border-dashed border-blood-fire flex items-center justify-center my-1 shadow-[0_0_12px_rgba(181,10,24,0.5)]">
+<span class="material-symbols-outlined text-[14px] text-blood-fire">event_upcoming</span>
+</div>
+<span class="font-mono text-[10px] text-primary uppercase font-bold">Metal Fest 2026</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- HORIZONTAL TRACK OF CONCERT CARDS (CHRONOLOGICAL 1994 -> 2026) -->
+<div class="max-w-[1500px] mx-auto px-4 md:px-8">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-blood-fire text-[22px]">view_carousel</span>
+<h2 class="font-anton text-2xl text-white uppercase tracking-wide">Trilha Cronológica de Shows</h2>
+<span class="font-mono text-xs text-outline hidden sm:inline">(Arraste ou clique nas setas para navegar)</span>
+</div>
+<span class="font-mono text-xs text-tertiary">5 Shows em Destaque na Régua</span>
+</div>
+<!-- HORIZONTAL SCROLL CONTAINER -->
+<div class="flex items-stretch gap-6 overflow-x-auto pb-6 pt-2 custom-scroll scroll-smooth" id="concert-track">
+<!-- CARD 1: 1994 - SLAYER (Monsters of Rock Pacaembu) -->
+<div class="min-w-[340px] md:min-w-[390px] max-w-[390px] bg-[#140e10] border border-primary-container/40 rounded-xl overflow-hidden shadow-2xl flex flex-col justify-between group hover:border-blood-fire transition-all shrink-0" id="card-1994"><div>
+<!-- Banner Image with distressed dark tint -->
+<div class="relative h-48 w-full overflow-hidden bg-black">
+<img alt="Sepultura and Slayer performing live at Monsters of Rock 1994 in Estádio do Pacaembu São Paulo with extreme red stage lights and raging crowd" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-90 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK_vT9ibtO5Mzj22wuxwqsX4itoCNr4lA7dtTlV4ASedSoW1gIn_996PsFvUqGHArilBRsz73uwrEO5mb2D8HcRQEr4tqxrvf3ybkOu_Z4FcRxEIqf6AeAUteEg6HddQuhnipKZ34iMkzWfF8BPOJ4cbKv_Pd20d5fH4C5Au9e2UHlzYZhTpN-3tYIf-szvbohru-VTsyZ4K0OH6SIWkwQiry-ubLs2VlQGHvVe3gEIo6q5BsAmys">
+<div class="absolute inset-0 bg-gradient-to-t from-[#140e10] via-transparent to-black/60"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded bg-blood-fire text-white font-mono text-[11px] font-extrabold uppercase shadow-[0_0_10px_rgba(230,28,36,0.6)]">
+                  Primeiro Show
+                </span>
+<span class="px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border border-blood-fire text-secondary font-mono text-[10px] uppercase font-bold">
+                  27 Ago 1994
+                </span>
+</div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between">
+<span class="font-mono text-[11px] text-secondary tracking-wider uppercase font-bold">Monsters of Rock Brasil</span>
+<span class="font-mono text-[10px] text-outline">Estádio do Pacaembu, SP</span>
+</div>
+</div>
+<!-- Content Details -->
+<div class="p-4 flex flex-col gap-2.5">
+<div>
+<span class="font-mono text-[11px] text-blood-fire uppercase tracking-wider block font-bold">Turnê Chaos A.D. &amp; Divine Intervention</span>
+<h3 class="font-anton text-2xl text-white tracking-wide uppercase mt-0.5 flex items-center justify-between">
+<span class="">Sepultura + Slayer</span>
+<span class="text-xs font-mono font-normal text-secondary">Formação Clássica</span>
+</h3>
+</div>
+<p class="font-chivo text-xs text-on-surface-variant leading-relaxed line-clamp-3">
+                O batismo de fogo no moshpit: Sepultura em seu auge com a formação clássica e original (Max Cavalera, Igor Cavalera, Andreas Kisser e Paulo Jr.) destruindo com 'Refuse/Resist' e 'Territory', seguido pelo massacre sonoro do Slayer no Pacaembu.
+              </p>
+<!-- Fast Info Badges -->
+<div class="flex items-center gap-2 flex-wrap pt-1 text-[11px] font-mono">
+<span class="px-2 py-0.5 rounded bg-primary-container text-white border border-blood-fire font-bold">Sepultura Original</span>
+<span class="px-2 py-0.5 rounded bg-[#1e1315] text-secondary border border-secondary/30">Max &amp; Igor Cavalera</span>
+<span class="px-2 py-0.5 rounded bg-[#1e1315] text-on-surface-variant">Grade Central</span>
+</div>
+</div>
+</div>
+<!-- Bottom Actions -->
+<div class="p-4 pt-2 border-t border-primary-container/20 flex items-center justify-between gap-2">
+<button class="flex-1 py-1.5 px-2 rounded bg-[#1c1315] hover:bg-[#281b1e] text-on-surface hover:text-white font-mono text-[11px] uppercase flex items-center justify-center gap-1 border border-outline-variant/40 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px] text-secondary">queue_music</span>
+<span class="">Setlist</span>
+</button>
+<button class="flex-1 py-1.5 px-2 rounded bg-[#1c1315] hover:bg-[#281b1e] text-on-surface hover:text-white font-mono text-[11px] uppercase flex items-center justify-center gap-1 border border-outline-variant/40 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px] text-primary">photo_camera</span>
+<span class="">Fotos</span>
+</button>
+<button class="py-1.5 px-3 rounded bg-primary-container hover:bg-blood-fire text-white font-mono text-[11px] font-bold uppercase flex items-center justify-center gap-1 transition-all border border-blood-fire" onclick="document.getElementById('show-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[15px]">visibility</span>
+<span class="">Abrir</span>
+</button>
+</div></div>
+<!-- CARD 2: 2011 - ROCK IN RIO IV (Metallica, Slayer, Sepultura) -->
+<div class="min-w-[340px] md:min-w-[390px] max-w-[390px] bg-[#140e10] border border-primary-container/40 rounded-xl overflow-hidden shadow-2xl flex flex-col justify-between group hover:border-blood-fire transition-all shrink-0" id="card-2011">
+<div>
+<div class="relative h-48 w-full overflow-hidden bg-black">
+<img alt="Rock in Rio 2011 Dia do Metal showing massive crowd with red and amber fire spotlights on world stage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzr15JAOjMH6_2r6olO0Beuc2K_GJSxQm2Fpa2inaW_J22aE74YEf_Gq6cSKKZa7W6o6iiLCZojAANgwJuDKxNqhdmOy7fM1GzY5ZTEjNKoopIuaEaOA76DTfXrBG28sYDY6aX3Jo7A6iY9p0CzVD4aluWC_6tBhAndxKEnMYrmzpNsXT46Pu3TsNfgRyY1gdyCxx8FoFQNwtj_nchd8xWxk-Dz-8j9TxgC84FDai3sY-6qurxITk">
+<div class="absolute inset-0 bg-gradient-to-t from-[#140e10] via-transparent to-black/60"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded bg-black/80 backdrop-blur-md border border-tertiary text-white font-mono text-[11px] font-bold uppercase">
+                  25 Set 2011
+                </span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-white font-mono text-[10px] uppercase font-bold">
+                  Dia do Metal
+                </span>
+</div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between">
+<span class="font-mono text-[11px] text-tertiary tracking-wider uppercase font-bold">Rock in Rio IV</span>
+<span class="font-mono text-[10px] text-outline">Cidade do Rock, RJ</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-2.5">
+<div>
+<span class="font-mono text-[11px] text-secondary uppercase tracking-wider block">World Painted Blood Tour</span>
+<h3 class="font-anton text-2xl text-white tracking-wide uppercase mt-0.5 flex items-center justify-between">
+<span class="">Slayer + Metallica</span>
+<span class="text-xs font-mono font-normal text-outline">Palco Mundo</span>
+</h3>
+</div>
+<p class="font-chivo text-xs text-on-surface-variant leading-relaxed line-clamp-3">
+                A noite mais pesada da história da Cidade do Rock. Jeff Hanneman homenageado no telão, Dave Lombardo disparando rajadas em 'Disciple' e 100 mil vozes berrando 'Raining Blood' sob a lua carioca.
+              </p>
+<div class="flex items-center gap-2 flex-wrap pt-1 text-[11px] font-mono">
+<span class="px-2 py-0.5 rounded bg-[#1e1315] text-primary border border-primary-container/30">14 Faixas Brutais</span>
+<span class="px-2 py-0.5 rounded bg-[#1e1315] text-tertiary border border-tertiary/30">100.000 Headbangers</span>
+</div>
+</div>
+</div>
+<div class="p-4 pt-2 border-t border-primary-container/20 flex items-center justify-between gap-2">
+<button class="flex-1 py-1.5 px-2 rounded bg-[#1c1315] hover:bg-[#281b1e] text-on-surface hover:text-white font-mono text-[11px] uppercase flex items-center justify-center gap-1 border border-outline-variant/40 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px] text-secondary">play_circle</span>
+<span class="">Vídeos</span>
+</button>
+<button class="flex-1 py-1.5 px-2 rounded bg-[#1c1315] hover:bg-[#281b1e] text-on-surface hover:text-white font-mono text-[11px] uppercase flex items-center justify-center gap-1 border border-outline-variant/40 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px] text-primary">queue_music</span>
+<span class="">Setlist</span>
+</button>
+<button class="py-1.5 px-3 rounded bg-primary-container hover:bg-blood-fire text-white font-mono text-[11px] font-bold uppercase flex items-center justify-center gap-1 transition-all border border-blood-fire" onclick="document.getElementById('show-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[15px]">visibility</span>
+<span class="">Abrir</span>
+</button>
+</div>
+</div>
+<!-- CARD 3: 2019 - SLAYER FAREWELL TOUR (FEATURED IN FOCUS) -->
+<div class="min-w-[360px] md:min-w-[420px] max-w-[420px] bg-[#180e10] border-2 border-blood-fire rounded-xl overflow-hidden shadow-[0_0_35px_rgba(230,28,36,0.35)] flex flex-col justify-between group transition-all shrink-0 relative" id="card-2019">
+<!-- Featured Ribbon -->
+<div class="absolute top-0 right-0 bg-blood-fire text-white font-mono text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-bl-lg z-20 shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">star</span>
+            Show em Destaque
+          </div>
+<div>
+<div class="relative h-52 w-full overflow-hidden bg-black">
+<img alt="Slayer farewell concert stage with immense upside-down burning crosses, blood-red lighting, Kerry King and Tom Araya in São Paulo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-95 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD70CgA5kbqoN4Cy4zxqPg2X0RtozoEcXsyPHihZgokKC5NxNfLmYGUswHrCXfH2GeGGBZz-ZKNw9sxOLVgvncIZvgwc547WBI7q5iqUawn3c0HvT5Obs4j1zWjlESRaIQAuMutITieWMXtIihBcMM-IiiAJLmICeFHMObAxawW7YivxAU5dzaNcNhbbtRSPqrFT9xBFJN0jn79cGW59CPWG3YGVHU2XoZ6uT_13XJw7tQSRr3Af3E">
+<div class="absolute inset-0 bg-gradient-to-t from-[#180e10] via-black/20 to-black/60"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded bg-black/80 backdrop-blur-md border border-blood-fire text-white font-mono text-[11px] font-bold uppercase">
+                  02 Out 2019
+                </span>
+<span class="px-2 py-0.5 rounded bg-primary-container text-white font-mono text-[10px] uppercase font-bold animate-pulse">
+                  Despedida Oficial
+                </span>
+</div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between">
+<span class="font-mono text-[11px] text-primary tracking-wider uppercase font-bold">Espaço das Américas, SP</span>
+<span class="font-mono text-[10px] text-white/90">Pista Premium</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-2.5">
+<div>
+<span class="font-mono text-[11px] text-blood-fire uppercase tracking-widest font-bold block">The Final Campaign: Farewell World Tour</span>
+<h3 class="font-anton text-3xl text-white tracking-wider uppercase mt-0.5 flex items-center justify-between text-blood-shadow">
+<span class="">Slayer</span>
+<span class="text-xs font-mono text-secondary">Último Show em SP</span>
+</h3>
+</div>
+<p class="font-chivo text-xs text-on-surface-variant leading-relaxed">
+                A noite mais visceral e comovente da história do thrash. Um calor infernal, parede de amplificadores Marshall rugindo a 118 dB e Tom Araya fitando a plateia em silêncio por quase 10 minutos após 'Angel of Death'.
+              </p>
+<div class="flex items-center gap-2 flex-wrap pt-1 text-[11px] font-mono">
+<span class="px-2.5 py-0.5 rounded bg-primary-container text-white border border-blood-fire font-bold">20 Músicas</span>
+<span class="px-2 py-0.5 rounded bg-[#241316] text-secondary border border-secondary/40">Backdrop Hanneman</span>
+<span class="px-2 py-0.5 rounded bg-[#241316] text-tertiary">118 dB Medidos</span>
+</div>
+</div>
+</div>
+<div class="p-4 pt-2 border-t border-primary-container/30 flex items-center justify-between gap-2 bg-[#10090a]">
+<button class="flex-1 py-2 px-3 rounded bg-[#221316] hover:bg-primary-container text-white font-mono text-xs uppercase flex items-center justify-center gap-1.5 border border-primary-container/60 transition-all" onclick="document.getElementById('show-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[16px] text-blood-fire">menu_book</span>
+<span class="">História Completa</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded bg-primary-container hover:bg-blood-fire text-white font-anton text-sm tracking-wider uppercase flex items-center justify-center gap-1.5 transition-all border border-blood-fire shadow-[0_0_15px_rgba(230,28,36,0.6)]" onclick="document.getElementById('show-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="">Abrir Ficha</span>
+</button>
+</div>
+</div>
+<!-- CARD 4: 2024 - IRON MAIDEN + SEPULTURA -->
+<div class="min-w-[340px] md:min-w-[390px] max-w-[390px] bg-[#140e10] border border-primary-container/40 rounded-xl overflow-hidden shadow-2xl flex flex-col justify-between group hover:border-blood-fire transition-all shrink-0" id="card-2024">
+<div>
+<div class="relative h-48 w-full overflow-hidden bg-black">
+<img alt="Iron Maiden stadium concert with massive Eddie backdrop and pyrotechnics in Allianz Parque São Paulo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAmMRdCZFGmjC8o77bjFwVhgpVv47hQDPmRbaJkkzxzbobOfF8K6z4kXuEaLzX8b8imxoPZQzIUuE-gUUAQzSG7phPWhSGDtFNlGSLsDybXiaQCNkYYJh9VjGqRYm7FsHPgA1efXw9Oh64ithi0CMBipKNQhn10x826NdGs5Ue2aSmGu26EJq8pb_IHKqBVwoaluPL3zh_IN1xsAosJvXJcdOfEJr_imx_Cet30IzNUesbXniN_jc">
+<div class="absolute inset-0 bg-gradient-to-t from-[#140e10] via-transparent to-black/60"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded bg-black/80 backdrop-blur-md border border-secondary text-white font-mono text-[11px] font-bold uppercase">
+                  06 Dez 2024
+                </span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-white font-mono text-[10px] uppercase font-bold">
+                  Allianz Parque
+                </span>
+</div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between">
+<span class="font-mono text-[11px] text-secondary tracking-wider uppercase font-bold">The Future Past Tour</span>
+<span class="font-mono text-[10px] text-outline">São Paulo - SP</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-2.5">
+<div>
+<span class="font-mono text-[11px] text-secondary uppercase tracking-wider block">Heavy &amp; Thrash Masters</span>
+<h3 class="font-anton text-2xl text-white tracking-wide uppercase mt-0.5 flex items-center justify-between">
+<span class="">Iron Maiden</span>
+<span class="text-xs font-mono font-normal text-outline">+ Sepultura</span>
+</h3>
+</div>
+<p class="font-chivo text-xs text-on-surface-variant leading-relaxed line-clamp-3">
+                Combinação explosiva com a turnê de despedida do Sepultura abrindo a noite com Andreas Kisser e Greyson Nekrutman detonando no palco de arena.
+              </p>
+<div class="flex items-center gap-2 flex-wrap pt-1 text-[11px] font-mono">
+<span class="px-2 py-0.5 rounded bg-[#1e1315] text-secondary border border-secondary/30">15 Faixas Maiden</span>
+<span class="px-2 py-0.5 rounded bg-[#1e1315] text-primary border border-primary/30">Sepultura Farewell</span>
+</div>
+</div>
+</div>
+<div class="p-4 pt-2 border-t border-primary-container/20 flex items-center justify-between gap-2">
+<button class="flex-1 py-1.5 px-2 rounded bg-[#1c1315] hover:bg-[#281b1e] text-on-surface hover:text-white font-mono text-[11px] uppercase flex items-center justify-center gap-1 border border-outline-variant/40 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px] text-secondary">queue_music</span>
+<span class="">Setlist</span>
+</button>
+<button class="flex-1 py-1.5 px-2 rounded bg-[#1c1315] hover:bg-[#281b1e] text-on-surface hover:text-white font-mono text-[11px] uppercase flex items-center justify-center gap-1 border border-outline-variant/40 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px] text-primary">photo_camera</span>
+<span class="">42 Fotos</span>
+</button>
+<button class="py-1.5 px-3 rounded bg-primary-container hover:bg-blood-fire text-white font-mono text-[11px] font-bold uppercase flex items-center justify-center gap-1 transition-all border border-blood-fire" onclick="document.getElementById('show-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[15px]">visibility</span>
+<span class="">Abrir</span>
+</button>
+</div>
+</div>
+<!-- CARD 5: 2026 - METAL FEST 2026 (Shows Confirmados & Contagem Regressiva) -->
+<div class="min-w-[340px] md:min-w-[390px] max-w-[390px] bg-[#140e10] border border-dashed border-blood-fire/80 rounded-xl overflow-hidden shadow-2xl flex flex-col justify-between group hover:border-blood-fire transition-all shrink-0" id="card-2026">
+<div>
+<div class="relative h-48 w-full overflow-hidden bg-black">
+<img alt="Dramatic dark concert crowd waiting with red beacon lights and laser grid for a future metal festival" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-80 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc-rH9nB6pL1BrI6ubBvBvHdbwMd0GrDXTASEARa4lQIwzeFUOsXVFQWmyoDHStyULTZpTz5y_Ygaum9EzVnhpnU0mmYs-BTrPRnMzYbsMGX0nmqmviYR1-JtG7_-0QbNJgG1o_lKpfV2CNX99rmZ1NO0_4OEnTpXNYMsg5PSl25RWF8QsC3BOaXX8RGTuj3OJbk-BQCA4w7RrUPtvUwmnZMKGidbrSPjg-zu9drfk5ar-IptMb2o">
+<div class="absolute inset-0 bg-gradient-to-t from-[#140e10] via-transparent to-black/70"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded bg-blood-dark border border-blood-fire text-primary font-mono text-[11px] font-bold uppercase">
+                  Abril 2026
+                </span>
+<span class="px-2 py-0.5 rounded bg-primary-container text-white font-mono text-[10px] uppercase font-bold animate-pulse">
+                  Confirmado
+                </span>
+</div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between">
+<span class="font-mono text-[11px] text-blood-fire tracking-wider uppercase font-bold">Interlagos Circuit, SP</span>
+<span class="font-mono text-[10px] text-outline">Line-up em Expansão</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-2.5">
+<div>
+<span class="font-mono text-[11px] text-primary uppercase tracking-wider block">Futuro do Som Pesado</span>
+<h3 class="font-anton text-2xl text-white tracking-wide uppercase mt-0.5 flex items-center justify-between">
+<span class="">Metal Fest 2026</span>
+<span class="text-xs font-mono font-normal text-secondary">3 Dias</span>
+</h3>
+</div>
+<p class="font-chivo text-xs text-on-surface-variant leading-relaxed">
+                Turnê de reunião do Slayer anunciada para festivais seletos, Kreator, Testament e lendas mundiais do thrash metal. Contagem regressiva já ativada no cofre.
+              </p>
+<!-- Countdown Box -->
+<div class="bg-[#1c1214] border border-primary-container/40 p-2 rounded flex items-center justify-around font-mono text-center">
+<div>
+<span class="font-anton text-lg text-white block leading-none">412</span>
+<span class="text-[9px] text-outline uppercase">Dias</span>
+</div>
+<div class="text-blood-fire font-bold">:</div>
+<div>
+<span class="font-anton text-lg text-white block leading-none">14</span>
+<span class="text-[9px] text-outline uppercase">Horas</span>
+</div>
+<div class="text-blood-fire font-bold">:</div>
+<div>
+<span class="font-anton text-lg text-white block leading-none">38</span>
+<span class="text-[9px] text-outline uppercase">Min</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 pt-2 border-t border-primary-container/20 flex items-center justify-between gap-2">
+<button class="flex-1 py-1.5 px-2 rounded bg-[#1c1315] hover:bg-[#281b1e] text-on-surface hover:text-white font-mono text-[11px] uppercase flex items-center justify-center gap-1 border border-outline-variant/40 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px] text-secondary">confirmation_number</span>
+<span class="">Ingressos</span>
+</button>
+<button class="py-1.5 px-3 rounded bg-primary-container hover:bg-blood-fire text-white font-mono text-[11px] font-bold uppercase flex items-center justify-center gap-1 transition-all border border-blood-fire" onclick="alert('Contagem regressiva salva no seu diário!');" type="button">
+<span class="material-symbols-outlined text-[15px]">notifications_active</span>
+<span class="">Monitorar</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- EXPANDED CONCERT DETAIL MODAL (SLAYER - THE FINAL CAMPAIGN 2019) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-2xl hidden" id="show-modal">
+<!-- Backdrop close click -->
+<div class="absolute inset-0" onclick="document.getElementById('show-modal').classList.add('hidden')"></div>
+<!-- Modal Box Container -->
+<div class="relative w-full max-w-4xl max-h-[92vh] bg-[#120b0d] border border-blood-fire/70 rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.95),0_0_40px_rgba(181,10,24,0.5)] flex flex-col overflow-hidden z-10 metal-border">
+<!-- Modal Header with Stage Panorama & Slayer Brand -->
+<div class="relative h-64 sm:h-72 w-full shrink-0 overflow-hidden bg-black">
+<img alt="Slayer live in concert on stage with inverted burning pentagrams, blood red smoke and wall of Marshall amplifiers" class="w-full h-full object-cover filter brightness-95 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD70CgA5kbqoN4Cy4zxqPg2X0RtozoEcXsyPHihZgokKC5NxNfLmYGUswHrCXfH2GeGGBZz-ZKNw9sxOLVgvncIZvgwc547WBI7q5iqUawn3c0HvT5Obs4j1zWjlESRaIQAuMutITieWMXtIihBcMM-IiiAJLmICeFHMObAxawW7YivxAU5dzaNcNhbbtRSPqrFT9xBFJN0jn79cGW59CPWG3YGVHU2XoZ6uT_13XJw7tQSRr3Af3E">
+<div class="absolute inset-0 bg-gradient-to-t from-[#120b0d] via-[#120b0d]/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-[#120b0d]/90 via-transparent to-transparent"></div>
+<!-- Top Bar Controls -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded bg-blood-fire text-white font-mono text-xs uppercase font-extrabold tracking-wider shadow-lg border border-white/20">
+                Slayer Vault Archive
+              </span>
+<span class="px-2.5 py-1 rounded bg-black/80 backdrop-blur-md text-secondary font-mono text-xs border border-outline-variant/40">
+                São Paulo • 2019
+              </span>
+</div>
+<button class="w-10 h-10 rounded-lg bg-black/80 hover:bg-blood-fire text-white flex items-center justify-center transition-all border border-outline-variant/60" onclick="document.getElementById('show-modal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Hero Show Title Inside Header -->
+<div class="absolute bottom-4 left-4 sm:left-6 right-4">
+<div class="flex items-center gap-2 mb-1 flex-wrap">
+<span class="font-mono text-blood-fire text-xs uppercase tracking-widest font-bold">The Final Campaign: Farewell World Tour</span>
+<span class="text-outline">•</span>
+<span class="font-mono text-secondary text-xs">A Despedida dos Mestres do Thrash</span>
+</div>
+<h2 class="font-anton text-3xl sm:text-5xl text-white uppercase tracking-wider text-blood-shadow leading-tight">
+              Slayer
+            </h2>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-on-surface-variant font-mono text-xs mt-2">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span class="">02 de Outubro de 2019</span>
+</div>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="">Espaço das Américas, São Paulo - SP</span>
+</div>
+<div class="flex items-center gap-1.5 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">confirmation_number</span>
+<span class="">Pista Premium (Grade Central)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tabbed Navigation Ribbon -->
+<div class="w-full bg-[#0d0708] px-4 sm:px-6 shrink-0 overflow-x-auto flex items-center gap-2 border-b border-primary-container/30">
+<button class="modal-tab-btn active px-3.5 py-2.5 font-mono text-xs uppercase tracking-wider text-blood-fire border-b-2 border-blood-fire flex items-center gap-1.5 transition-all whitespace-nowrap font-bold" onclick="switchModalTab('tab-story', this)" type="button">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span class="">História &amp; Memórias Sombrias</span>
+</button>
+<button class="modal-tab-btn px-3.5 py-2.5 font-mono text-xs uppercase tracking-wider text-on-surface-variant hover:text-white flex items-center gap-1.5 transition-all whitespace-nowrap" onclick="switchModalTab('tab-setlist', this)" type="button">
+<span class="material-symbols-outlined text-[16px]">queue_music</span>
+<span class="">Repertório Sangrento</span>
+<span class="ml-1 px-1.5 py-0.2 rounded bg-primary-container text-[10px] text-white font-mono font-bold">20</span>
+</button>
+<button class="modal-tab-btn px-3.5 py-2.5 font-mono text-xs uppercase tracking-wider text-on-surface-variant hover:text-white flex items-center gap-1.5 transition-all whitespace-nowrap" onclick="switchModalTab('tab-gallery', this)" type="button">
+<span class="material-symbols-outlined text-[16px]">perm_media</span>
+<span class="">Galeria Moshpit &amp; Vídeos</span>
+</button>
+<button class="modal-tab-btn px-3.5 py-2.5 font-mono text-xs uppercase tracking-wider text-on-surface-variant hover:text-white flex items-center gap-1.5 transition-all whitespace-nowrap" onclick="switchModalTab('tab-news', this)" type="button">
+<span class="material-symbols-outlined text-[16px]">newspaper</span>
+<span class="">Críticas &amp; Ingressos</span>
+</button>
+</div>
+<!-- Modal Body Content with Scroll -->
+<div class="flex-1 overflow-y-auto p-4 sm:p-6 bg-[#120b0d] custom-scroll">
+<!-- TAB 1: HISTÓRIA & MEMÓRIAS SOMBRIAS -->
+<div class="modal-tab-pane flex flex-col gap-4" id="tab-story">
+<div class="bg-[#1b1012] p-4 rounded-lg border border-primary-container/40 flex items-start gap-3 shadow-md">
+<div class="w-10 h-10 rounded bg-blood-dark text-blood-fire shrink-0 flex items-center justify-center font-bold text-[20px] border border-blood-fire/50">
+<span class="material-symbols-outlined">skull</span>
+</div>
+<div class="flex flex-col">
+<span class="font-anton text-xl text-white tracking-wide uppercase">O Adeus dos Quatro Cavaleiros do Apocalipse</span>
+<span class="font-mono text-xs text-outline">Escrito por Você em 03 de Outubro de 2019 • Diário Thrash Vault #039</span>
+</div>
+</div>
+<div class="text-on-surface-variant font-chivo text-sm md:text-base flex flex-col gap-3 leading-relaxed">
+<p class="">
+                Chegar ao Espaço das Américas naquela quarta-feira nublada carregava um peso fúnebre e glorioso ao mesmo tempo. Era a última vez que veríamos o Slayer no palco no Brasil. Trinta e cinco anos de história do metal extremo resumidos a duas horas de intensidade implacável e volume absurdo que literalmente fazia tremer as costelas de quem estava na pista premium.
+              </p>
+<p class="">
+                Quando as cortinas caíram com o holograma de cruzes invertidas e o riff cortante de <em>"Repentless"</em> ecoou, a pista virou uma arena de batalha. Kerry King estava com a corrente no cinto cuspindo palhetadas a 220 BPM, Paul Bostaph destroçando a bateria e Gary Holt honrando cada nota do saudoso Jeff Hanneman com o patch "Heineken / Hanneman Still Reigning" na guitarra.
+              </p>
+<!-- Decibel Metric & Quote Box -->
+<div class="p-4 rounded-lg bg-[#1a0e10] border-l-4 border-blood-fire my-1 shadow-inner">
+<p class="font-chivo italic text-white text-sm md:text-base mb-2">
+                  "No encerramento de 'Angel of Death', a casa inteira gritava 'SLAYER!' como se o mundo fosse acabar ali mesmo. Quando todos saíram do palco, Tom Araya permaneceu em pé sozinho por quase 10 minutos, olhando nos olhos de cada fã na grade, visivelmente emocionado, e soltou: 'I will miss you guys... Muito obrigado'."
+                </p>
+<div class="flex items-center gap-3 font-mono text-xs text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-blood-fire">graphic_eq</span>
+                    Volume Medido no Pit: 118.4 dB
+                  </span>
+<span class="">•</span>
+<span class="">Moshpit contínuo: 90 minutos</span>
+</div>
+</div>
+<p class="">
+                Saímos de lá com os ouvidos zunindo, a camisa do 'Reign in Blood' completamente encharcada de suor e a certeza absoluta de que presenciamos a consagração do thrash metal. Um privilégio que ficará gravado na alma para todo o sempre.
+              </p>
+</div>
+<!-- Meta Badges -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 font-mono text-xs">
+<div class="bg-[#170e10] p-3 rounded border border-primary-container/30">
+<span class="text-outline uppercase block text-[10px]">Companhias de Mosh</span>
+<span class="text-white font-bold text-xs mt-1 block">Renato 'Mutilator', Diegão &amp; Tiago</span>
+</div>
+<div class="bg-[#170e10] p-3 rounded border border-primary-container/30">
+<span class="text-outline uppercase block text-[10px]">Ambiente no Salão</span>
+<span class="text-secondary font-bold text-xs mt-1 block">34°C • Clima Infernal</span>
+</div>
+<div class="bg-[#170e10] p-3 rounded border border-primary-container/30">
+<span class="text-outline uppercase block text-[10px]">Veredito Supremo</span>
+<span class="text-blood-fire font-bold text-xs mt-1 block">10/10 (Histórico e Imortal)</span>
+</div>
+</div>
+</div>
+<!-- TAB 2: REPERTÓRIO SANGRENTO (SETLIST) -->
+<div class="modal-tab-pane hidden flex flex-col gap-3 font-mono" id="tab-setlist">
+<div class="flex items-center justify-between pb-2 border-b border-primary-container/30 text-xs">
+<span class="text-white font-bold uppercase">Setlist Oficial Completo (São Paulo 2019)</span>
+<span class="text-blood-fire font-bold">20 Faixas • 1h 45m de Fúria</span>
+</div>
+<div class="flex flex-col gap-1.5 text-xs">
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">01</span>
+<span class="text-white font-bold">Repentless</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container text-white text-[10px] uppercase font-bold">Abertura</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">02</span>
+<span class="text-white font-bold">Evil Has No Boundaries</span>
+</div>
+<span class="text-outline text-[11px]">Show No Mercy (1983)</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">03</span>
+<span class="text-white font-bold">World Painted Blood</span>
+</div>
+<span class="text-outline text-[11px]">Riffs frenéticos</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">04</span>
+<span class="text-white font-bold">Postmortem</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-blood-dark text-primary text-[10px] uppercase">Reign in Blood Clássico</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">05</span>
+<span class="text-white font-bold">Hate Worldwide</span>
+</div>
+<span class="text-outline text-[11px]">Solo devastador Kerry</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">06</span>
+<span class="text-white font-bold">War Ensemble</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-blood-fire text-white text-[10px] uppercase font-bold">Pista Abriu Geral</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">07</span>
+<span class="text-white font-bold">Gemini</span>
+</div>
+<span class="text-outline text-[11px]">Doom arrastado e pesado</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">08</span>
+<span class="text-white font-bold">Disciple</span>
+</div>
+<span class="text-secondary text-[11px]">"God Hates Us All!"</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">09</span>
+<span class="text-white font-bold">Mandatory Suicide</span>
+</div>
+<span class="text-outline text-[11px]">South of Heaven (1988)</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">10</span>
+<span class="text-white font-bold">Chemical Warfare</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-blood-dark text-primary text-[10px] uppercase">Haunting the Chapel</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">11</span>
+<span class="text-white font-bold">Payback</span>
+</div>
+<span class="text-outline text-[11px]">Velocidade brutal</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">12</span>
+<span class="text-white font-bold">Temptation</span>
+</div>
+<span class="text-outline text-[11px]">Seasons in the Abyss</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">13</span>
+<span class="text-white font-bold">Born of Fire</span>
+</div>
+<span class="text-outline text-[11px]">Palhetadas insanas</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">14</span>
+<span class="text-white font-bold">Seasons in the Abyss</span>
+</div>
+<span class="text-secondary text-[11px]">Coro monumental da plateia</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">15</span>
+<span class="text-white font-bold">Hell Awaits</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container text-white text-[10px] uppercase font-bold">Vozes do Inferno</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">16</span>
+<span class="text-white font-bold">South of Heaven</span>
+</div>
+<span class="text-outline text-[11px]">Riff lendário inconfundível</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#201013] hover:bg-primary-container/30 transition-all border border-blood-fire/50">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">17</span>
+<span class="text-white font-bold text-sm">Raining Blood</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-blood-fire text-white text-[10px] uppercase font-bold shadow">Chuva de Sangue</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">18</span>
+<span class="text-white font-bold">Black Magic</span>
+</div>
+<span class="text-outline text-[11px]">1983 Thrash Anthem</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#180f11] hover:bg-primary-container/20 transition-all border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">19</span>
+<span class="text-white font-bold">Dead Skin Mask</span>
+</div>
+<span class="text-secondary text-[11px]">"Dance with the dead in my dreams..."</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-[#2a1014] hover:bg-primary-container/40 transition-all border-2 border-blood-fire">
+<div class="flex items-center gap-3">
+<span class="text-blood-fire font-bold w-6">20</span>
+<span class="text-white font-bold text-sm">Angel of Death</span>
+</div>
+<span class="px-2.5 py-0.5 rounded bg-white text-blood-dark text-[10px] uppercase font-extrabold">Clímax Definitivo</span>
+</div>
+</div>
+</div>
+<!-- TAB 3: GALERIA MOSHPIT & VÍDEOS -->
+<div class="modal-tab-pane hidden flex flex-col gap-4" id="tab-gallery">
+<!-- Video Mockup -->
+<div class="relative w-full rounded-xl overflow-hidden bg-black border border-primary-container/50 shadow-2xl">
+<div class="relative h-64 sm:h-72 w-full overflow-hidden">
+<img alt="Slayer performing Angel of Death live in São Paulo farewell concert with massive stage pyro" class="w-full h-full object-cover filter brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATYrlIdkZTFydALcpx7Gnhr37AD2KEXWjcsmTIBHm7jK1gTcNdaHCQVG1cDr9YJyuGHP16Dqwd9e2VcOibg5-buNZjRTKsKWNLhQPKKf-V4tVB9xgxik7AWiiczhWJsi-Jf8Q3VffKwP7TxE3HG2PxqwNuO6iw1Lx6SpPKTS6LVP32DbbfBFPN1KAHLqQR5uaK7sXVT9MwKkzQEKUrUDrDK7WxcgipJAE_fVPi_4o2rqOWCUsMR2c">
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-blood-fire text-white flex items-center justify-center shadow-[0_0_30px_rgba(230,28,36,0.8)] cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[36px]">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white font-mono">
+<span class="text-xs font-bold drop-shadow">Slayer - Live in São Paulo 2019 (Full Farewell Multicam 4K)</span>
+<span class="text-[11px] bg-black/80 px-2 py-0.5 rounded border border-blood-fire">01:46:12</span>
+</div>
+</div>
+</div>
+<!-- Photos Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 pt-1 font-mono">
+<div class="relative h-32 rounded-lg overflow-hidden border border-primary-container/40 group cursor-pointer">
+<img alt="Kerry King ferocious guitar solo on stage" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_pjrEvENVqPLChuyt6F6-JFvtvF1136fOY1b5kW9uq2DUd8aFnXCdFY1da2rluJKl-KdWvzVnsskTI_54EgthPcjVHoV2YQU4UWGdfSV9Xzes_1ZrvPkov2LqqcvMJvVMCOf4adwjJe_rjeOQ708D0xRZlr90050T7BT0SGul6QfIOlBrZH6W7xR0yvR63SVyv_JbCEcdkPqpazbQfgSnb3vqcsPG4kjn996Rt8sK_TEG8Ce_17g">
+<div class="absolute bottom-1 left-2 text-[10px] text-white font-bold drop-shadow">Grade Pista Premium</div>
+</div>
+<div class="relative h-32 rounded-lg overflow-hidden border border-primary-container/40 group cursor-pointer">
+<img alt="Slayer ticket stub and VIP laminate pass on black battle jacket with patches" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKbIsMNpw78mbcP1o1NdTgoEe5EMpcyrv6wfWZZ9qUmCwBTL8A1jYXPjXlhB7jTQ4sztRsZ0z5JWEcVZCQB2W9T77_dHf2hE1f-7EU1VOTNAolApfTSrrb34U-vw-VmJZNJt8yLcvMV0U7fIpcFqJLJ7Kif1waCGAxVyqLPd7JChFrb2z-W852dM0_PAf868m7mujdGj6ogZG5hieUKVQ5SKYGgpXNegSkWyqg2Z671BiTtnzGzrI">
+<div class="absolute bottom-1 left-2 text-[10px] text-white font-bold drop-shadow">Ingresso &amp; Palheta</div>
+</div>
+<div class="relative h-32 rounded-lg overflow-hidden border border-primary-container/40 group cursor-pointer">
+<img alt="Gigantic wall of Marshall amps and backdrop Hanneman Heineken logo at the end of the show" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb1cqp7FgjHwXaSGB2h4joLJcgoiutZH2SDtfMx_rdg8Jk7jGMI8sWsKkwOcQihKcCLf29lvcdZ3JgyoNqFy3zZuD3bLk2nG9L_mphD0DOaCYfJQmgpLQ2YIcj-gusymmmiGQBfYi0EbcNCFZ_ffbJPYDoBp2GS6TGCZydS9NRfgpJLgJTRFb9mXy9GNm9Ds5xye47lWB_4NUTjxgHeOXHAaJqQrvdMJHy9VsRaV4MfUoRKy5448Y">
+<div class="absolute bottom-1 left-2 text-[10px] text-white font-bold drop-shadow">Tributo Hanneman</div>
+</div>
+</div>
+</div>
+<!-- TAB 4: CRÍTICAS & INGRESSOS -->
+<div class="modal-tab-pane hidden flex flex-col gap-3 font-mono" id="tab-news">
+<a class="p-3.5 rounded-lg bg-[#180f11] hover:bg-[#221517] border border-primary-container/40 transition-all flex flex-col gap-1" href="#" target="_blank">
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-blood-fire uppercase font-bold">Whiplash.net • Cobertura Especial</span>
+<span class="material-symbols-outlined text-[15px] text-outline">open_in_new</span>
+</div>
+<h4 class="font-anton text-lg text-white tracking-wide uppercase mt-0.5">Slayer em São Paulo: A despedida avassaladora de uma lenda viva do metal</h4>
+<p class="font-chivo text-xs text-on-surface-variant leading-relaxed">"Com um Espaço das Américas lotado até o teto, Tom Araya e Kerry King entregaram uma das apresentações mais selvagens e perfeitas já vistas na capital paulista."</p>
+</a>
+<a class="p-3.5 rounded-lg bg-[#180f11] hover:bg-[#221517] border border-primary-container/40 transition-all flex flex-col gap-1" href="#" target="_blank">
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-secondary uppercase font-bold">Combate Rock • UOL</span>
+<span class="material-symbols-outlined text-[15px] text-outline">open_in_new</span>
+</div>
+<h4 class="font-anton text-lg text-white tracking-wide uppercase mt-0.5">O silêncio comovido de Tom Araya e a fúria eterna de 'Angel of Death'</h4>
+<p class="font-chivo text-xs text-on-surface-variant leading-relaxed">"Poucos frontmen no mundo têm a coragem e a dignidade de encerrar a carreira no auge absoluto de sua potência técnica e agressividade."</p>
+</a>
+</div>
+</div>
+<!-- Modal Action Footer -->
+<div class="w-full bg-[#0b0607] p-3 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-primary-container/30 shrink-0">
+<div class="flex items-center gap-2 w-full sm:w-auto">
+<button class="w-full sm:w-auto px-3.5 py-2 rounded-lg bg-[#1a0f12] hover:bg-[#27161a] border border-outline-variant/40 text-white font-mono text-xs flex items-center justify-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">photo_camera_back</span>
+<span class="">Google Fotos (64 Itens)</span>
+</button>
+<button class="w-full sm:w-auto px-3.5 py-2 rounded-lg bg-[#1a0f12] hover:bg-[#27161a] border border-outline-variant/40 text-white font-mono text-xs flex items-center justify-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">open_in_new</span>
+<span class="">Setlist.fm</span>
+</button>
+</div>
+<div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+<button class="w-full sm:w-auto px-5 py-2 rounded-lg bg-primary-container hover:bg-blood-fire text-white font-anton text-sm tracking-wider uppercase flex items-center justify-center gap-1.5 transition-all border border-blood-fire shadow-[0_0_20px_rgba(230,28,36,0.6)]" onclick="alert('Memória do Slayer copiada para a área de transferência!');" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span class="">Compartilhar Relato Thrash</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BRUTALIST METALLIC FOOTER -->
+<footer class="w-full bg-[#070405] border-t border-primary-container/40 py-8">
+<div class="max-w-[1500px] mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left"><div class="flex items-center gap-3">
+<img alt="Horned Skull Metal Emblem" class="h-10 w-10 object-contain filter drop-shadow-[0_0_8px_rgba(181,10,24,0.8)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB43fUt0m75QrVeOoQL0mA8Bh_S1TyM-816u69Iw3CTF03QgzAwXN_GzKsHeenDaLxpHzg6E6TgoEjrOIGEwRDf2Rt_S65wx4bZspZfxP8GA-n_oA3qK-4Mh9z4jsXzIbIlWONTgcv4AEazzL5thJq7BTOq3veQrI7-kNsjIXYHu-eMTjNgpzOMScC-PWgqW-0A--aGV1PEkr6rRTpgMXqHSvxbhR_huMF56otJaP4yEk4dYslpvho">
+<div class="flex flex-col text-left"><span class="font-anton text-xl text-white tracking-wider uppercase">LIVE</span>
+<span class="font-mono text-[10px] text-outline uppercase tracking-widest">por Caesar • live.caesarcesar.com.br (1994 - 2026)</span></div>
+</div>
+<p class="font-mono text-xs text-outline">© 1994 — 2026 live.caesarcesar.com.br por Caesar. Dedicado aos moshpits, palhetas voadoras e lendas eternas do som pesado.</p>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded bg-blood-dark border border-blood-fire text-white font-mono text-[11px] uppercase tracking-widest font-bold shadow-md">
+          STILL REIGNING
+        </span>
+</div></div>
+</footer>
+<!-- JAVASCRIPT FOR INTERACTIVE HORIZONTAL TIMELINE & MODAL TABS -->
+<script>
+    function switchModalTab(tabId, triggerBtn) {
+      document.querySelectorAll('.modal-tab-pane').forEach(el => el.classList.add('hidden'));
+      const activePane = document.getElementById(tabId);
+      if (activePane) activePane.classList.remove('hidden');
+
+      document.querySelectorAll('.modal-tab-btn').forEach(btn => {
+        btn.classList.remove('text-blood-fire', 'border-b-2', 'border-blood-fire', 'font-bold');
+        btn.classList.add('text-on-surface-variant');
+      });
+
+      triggerBtn.classList.add('text-blood-fire', 'border-b-2', 'border-blood-fire', 'font-bold');
+      triggerBtn.classList.remove('text-on-surface-variant');
+    }
+
+    function scrollTimeline(offset) {
+      const track = document.getElementById('concert-track');
+      const ruler = document.getElementById('ruler-container');
+      if (track) track.scrollBy({ left: offset, behavior: 'smooth' });
+      if (ruler) ruler.scrollBy({ left: offset / 2, behavior: 'smooth' });
+    }
+
+    function scrollToCard(cardId) {
+      const card = document.getElementById(cardId);
+      if (card) {
+        card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        card.classList.add('ring-2', 'ring-blood-fire');
+        setTimeout(() => {
+          card.classList.remove('ring-2', 'ring-blood-fire');
+        }, 1800);
+      }
+    }
+
+    function scrollToYear(year) {
+      document.querySelectorAll('.decade-btn').forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-white', 'border-blood-fire');
+        btn.classList.add('bg-[#201517]', 'text-on-surface-variant');
+      });
+      if (event && event.currentTarget) {
+        event.currentTarget.classList.add('bg-primary-container', 'text-white', 'border-blood-fire');
+        event.currentTarget.classList.remove('bg-[#201517]', 'text-on-surface-variant');
+      }
+
+      if (year === '1991' || year === '1994') {
+        scrollToCard('card-1994');
+      } else if (year === '2004' || year === '2011') {
+        scrollToCard('card-2011');
+      } else if (year === '2019') {
+        scrollToCard('card-2019');
+      } else if (year === '2024') {
+        scrollToCard('card-2024');
+      } else if (year === '2026') {
+        scrollToCard('card-2026');
+      }
+    }
+  </script>
+
+
+
+
+
+
+</body></html>

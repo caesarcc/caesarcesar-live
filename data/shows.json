@@ -1,38 +1,342 @@
 [
-    {
-        "id": "2026-03-04-acdc-sp",
-        "title": "AC/DC - PWR UP Tour",
-        "date": "2026-03-04",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "venue": "Estádio Morumbi",
-        "bands": [
-            "AC/DC"
-        ],
-        "isFestival": false,
-        "festivalName": null,
-        "coverImage": "/assets/shows/2026-acdc-cover.jpg",
-        "story": "Relato detalhado com memórias, com quem fui, perrengues e impressões do show...",
-        "setlistUrl": "[https://www.setlist.fm/setlist/acdc/2026/](https://www.setlist.fm/setlist/acdc/2026/)...",
-        "media": [
-            {
-                "type": "youtube_embed",
-                "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)...",
-                "author": "Canal Externo / Fã",
-                "description": "Abertura gravada da pista"
-            },
-            {
-                "type": "google_photos_link",
-                "url": "[https://photos.app.goo.gl/](https://photos.app.goo.gl/)...",
-                "label": "Álbum completo no Google Fotos"
-            }
-        ],
-        "newsLinks": [
-            {
-                "title": "Crítica e cobertura do show no G1",
-                "url": "[https://g1.globo.com/](https://g1.globo.com/)..."
-            }
-        ]
-    }
+  {
+    "id": "1994-08-27-monsters-of-rock",
+    "year": "1994",
+    "title": "Monsters of Rock Brasil",
+    "headline": "Sepultura + Slayer",
+    "subheadline": "Formação Clássica",
+    "tour": "Turnê Chaos A.D. & Divine Intervention",
+    "date": "1994-08-27",
+    "formattedDate": "27 Ago 1994",
+    "city": "São Paulo",
+    "state": "SP",
+    "country": "Brasil",
+    "venue": "Estádio do Pacaembu",
+    "bands": ["Sepultura", "Slayer", "Black Sabbath", "Kiss", "Suicidal Tendencies"],
+    "isFestival": true,
+    "festivalName": "Monsters of Rock",
+    "isMilestone": true,
+    "milestoneTag": "Primeiro Show",
+    "genre": "Thrash Metal",
+    "badge": "Sepultura Original",
+    "secondaryBadge": "Max & Igor Cavalera",
+    "tertiaryBadge": "Grade Central",
+    "coverImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuBK_vT9ibtO5Mzj22wuxwqsX4itoCNr4lA7dtTlV4ASedSoW1gIn_996PsFvUqGHArilBRsz73uwrEO5mb2D8HcRQEr4tqxrvf3ybkOu_Z4FcRxEIqf6AeAUteEg6HddQuhnipKZ34iMkzWfF8BPOJ4cbKv_Pd20d5fH4C5Au9e2UHlzYZhTpN-3tYIf-szvbohru-VTsyZ4K0OH6SIWkwQiry-ubLs2VlQGHvVe3gEIo6q5BsAmys",
+    "summary": "O batismo de fogo no moshpit: Sepultura em seu auge com a formação clássica e original (Max Cavalera, Igor Cavalera, Andreas Kisser e Paulo Jr.) destruindo com 'Refuse/Resist' e 'Territory', seguido pelo massacre sonoro do Slayer no Pacaembu.",
+    "storyTitle": "Batismo de Fogo no Pacaembu",
+    "story": "Primeiro grande festival da minha vida. Chegar ao Pacaembu em 1994 com uma energia caótica no ar. Sepultura no auge absoluto da turnê do Chaos A.D., com Max cuspindo fogo no microfone e Igor quebrando tudo na bateria. Quando tocaram 'Refuse/Resist', o estádio quase veio abaixo. Logo em seguida, o Slayer subiu ao palco para um massacre sonoro inesquecível.",
+    "quote": "A terra tremeu no Pacaembu quando 'Refuse/Resist' começou. Uma parede de corpos na arquibancada e no gramado.",
+    "decibels": "116.2 dB",
+    "moshDuration": "120 minutos",
+    "companions": "Amigos do Colégio",
+    "temperature": "22°C • Garoa Paulista",
+    "verdict": "10/10 (Histórico e Inesquecível)",
+    "setlist": [
+      { "number": "01", "title": "Refuse/Resist", "tag": "Abertura Chaos A.D." },
+      { "number": "02", "title": "Territory", "tag": "Clássico" },
+      { "number": "03", "title": "Slave New World", "tag": "Mosh brutal" },
+      { "number": "04", "title": "Amen", "tag": "Chaos A.D." },
+      { "number": "05", "title": "Dead Embryonic Cells", "tag": "Arise" },
+      { "number": "06", "title": "Desperate Cry", "tag": "Clássico" },
+      { "number": "07", "title": "Biotech Is Godzilla", "tag": "Velocidade punk" },
+      { "number": "08", "title": "Inner Self", "tag": "Beneath the Remains" },
+      { "number": "09", "title": "Arise", "tag": "Clímax Sepultura" }
+    ],
+    "photos": [
+      {
+        "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBK_vT9ibtO5Mzj22wuxwqsX4itoCNr4lA7dtTlV4ASedSoW1gIn_996PsFvUqGHArilBRsz73uwrEO5mb2D8HcRQEr4tqxrvf3ybkOu_Z4FcRxEIqf6AeAUteEg6HddQuhnipKZ34iMkzWfF8BPOJ4cbKv_Pd20d5fH4C5Au9e2UHlzYZhTpN-3tYIf-szvbohru-VTsyZ4K0OH6SIWkwQiry-ubLs2VlQGHvVe3gEIo6q5BsAmys",
+        "caption": "Pacaembu em chamas"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Sepultura - Live at Monsters of Rock 1994 (Pacaembu)",
+        "duration": "58:30",
+        "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuBK_vT9ibtO5Mzj22wuxwqsX4itoCNr4lA7dtTlV4ASedSoW1gIn_996PsFvUqGHArilBRsz73uwrEO5mb2D8HcRQEr4tqxrvf3ybkOu_Z4FcRxEIqf6AeAUteEg6HddQuhnipKZ34iMkzWfF8BPOJ4cbKv_Pd20d5fH4C5Au9e2UHlzYZhTpN-3tYIf-szvbohru-VTsyZ4K0OH6SIWkwQiry-ubLs2VlQGHvVe3gEIo6q5BsAmys"
+      }
+    ],
+    "newsLinks": [
+      {
+        "title": "Folha de S.Paulo: O primeiro Monsters of Rock reúne multidão no Pacaembu",
+        "source": "Folha de S.Paulo (1994)",
+        "snippet": "Sepultura e Slayer lideram escalação que fez tremer a zona oeste da capital com guitarras pesadas e mais de 40 mil pessoas."
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/sepultura/1994/estadio-do-pacaembu-sao-paulo-brazil-3bd648b0.html",
+    "googlePhotosUrl": ""
+  },
+  {
+    "id": "2011-09-25-rock-in-rio-metal",
+    "year": "2011",
+    "title": "Rock in Rio IV",
+    "headline": "Slayer + Metallica",
+    "subheadline": "Palco Mundo",
+    "tour": "World Painted Blood Tour",
+    "date": "2011-09-25",
+    "formattedDate": "25 Set 2011",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "country": "Brasil",
+    "venue": "Cidade do Rock",
+    "bands": ["Slayer", "Metallica", "Sepultura", "Tambours du Bronx", "Mastodon"],
+    "isFestival": true,
+    "festivalName": "Rock in Rio",
+    "isMilestone": false,
+    "milestoneTag": "Dia do Metal",
+    "genre": "Thrash Metal",
+    "badge": "14 Faixas Brutais",
+    "secondaryBadge": "100.000 Headbangers",
+    "tertiaryBadge": "Palco Mundo",
+    "coverImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzr15JAOjMH6_2r6olO0Beuc2K_GJSxQm2Fpa2inaW_J22aE74YEf_Gq6cSKKZa7W6o6iiLCZojAANgwJuDKxNqhdmOy7fM1GzY5ZTEjNKoopIuaEaOA76DTfXrBG28sYDY6aX3Jo7A6iY9p0CzVD4aluWC_6tBhAndxKEnMYrmzpNsXT46Pu3TsNfgRyY1gdyCxx8FoFQNwtj_nchd8xWxk-Dz-8j9TxgC84FDai3sY-6qurxITk",
+    "summary": "A noite mais pesada da história da Cidade do Rock. Jeff Hanneman homenageado no telão, Dave Lombardo disparando rajadas em 'Disciple' e 100 mil vozes berrando 'Raining Blood' sob a lua carioca.",
+    "storyTitle": "A Noite Mais Pesada da Cidade do Rock",
+    "story": "Viagem inesquecível para o Rio de Janeiro. A Cidade do Rock completamente tomada por camisas pretas no lendário Dia do Metal de 2011. Slayer tocou com uma fúria descomunal com Dave Lombardo na bateria e Kerry King implacável. No encerramento com 'Angel of Death', a poeira subiu a metros de altura na frente do Palco Mundo.",
+    "quote": "'Raining Blood' ecoou por todo o Rio de Janeiro com 100 mil pessoas cantando juntas.",
+    "decibels": "117.8 dB",
+    "moshDuration": "80 minutos",
+    "companions": "Galera de SP em caravana",
+    "temperature": "26°C • Noite Quente",
+    "verdict": "9.5/10 (Apoteose do Metal)",
+    "setlist": [
+      { "number": "01", "title": "World Painted Blood", "tag": "Abertura" },
+      { "number": "02", "title": "Hate Worldwide", "tag": "Fúria" },
+      { "number": "03", "title": "War Ensemble", "tag": "Moshpit gigante" },
+      { "number": "04", "title": "Postmortem", "tag": "Reign in Blood" },
+      { "number": "05", "title": "Raining Blood", "tag": "Hino" },
+      { "number": "06", "title": "Angel of Death", "tag": "Encerramento" }
+    ],
+    "photos": [
+      {
+        "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzr15JAOjMH6_2r6olO0Beuc2K_GJSxQm2Fpa2inaW_J22aE74YEf_Gq6cSKKZa7W6o6iiLCZojAANgwJuDKxNqhdmOy7fM1GzY5ZTEjNKoopIuaEaOA76DTfXrBG28sYDY6aX3Jo7A6iY9p0CzVD4aluWC_6tBhAndxKEnMYrmzpNsXT46Pu3TsNfgRyY1gdyCxx8FoFQNwtj_nchd8xWxk-Dz-8j9TxgC84FDai3sY-6qurxITk",
+        "caption": "Palco Mundo em êxtase"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Slayer - Live at Rock in Rio 2011 (Full Concert Pro-Shot)",
+        "duration": "01:05:20",
+        "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzr15JAOjMH6_2r6olO0Beuc2K_GJSxQm2Fpa2inaW_J22aE74YEf_Gq6cSKKZa7W6o6iiLCZojAANgwJuDKxNqhdmOy7fM1GzY5ZTEjNKoopIuaEaOA76DTfXrBG28sYDY6aX3Jo7A6iY9p0CzVD4aluWC_6tBhAndxKEnMYrmzpNsXT46Pu3TsNfgRyY1gdyCxx8FoFQNwtj_nchd8xWxk-Dz-8j9TxgC84FDai3sY-6qurxITk"
+      }
+    ],
+    "newsLinks": [
+      {
+        "title": "G1: Slayer massacra no Rock in Rio e homenageia guitarrista",
+        "source": "G1 Música (2011)",
+        "snippet": "Com som impecável e volume ensurdecedor, quarteto fez uma das apresentações mais celebradas do festival."
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/slayer/2011/parque-olimpico-cidade-do-rock-rio-de-janeiro-brazil-23d06cb3.html",
+    "googlePhotosUrl": ""
+  },
+  {
+    "id": "2019-10-02-slayer-farewell",
+    "year": "2019",
+    "title": "The Final Campaign: Farewell World Tour",
+    "headline": "Slayer",
+    "subheadline": "Último Show em SP",
+    "tour": "The Final Campaign: Farewell World Tour",
+    "date": "2019-10-02",
+    "formattedDate": "02 Out 2019",
+    "city": "São Paulo",
+    "state": "SP",
+    "country": "Brasil",
+    "venue": "Espaço das Américas",
+    "bands": ["Slayer", "Claustrofobia"],
+    "isFestival": false,
+    "festivalName": null,
+    "isMilestone": true,
+    "isFeatured": true,
+    "milestoneTag": "Despedida Oficial",
+    "genre": "Thrash Metal",
+    "badge": "20 Músicas",
+    "secondaryBadge": "Backdrop Hanneman",
+    "tertiaryBadge": "118 dB Medidos",
+    "coverImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuD70CgA5kbqoN4Cy4zxqPg2X0RtozoEcXsyPHihZgokKC5NxNfLmYGUswHrCXfH2GeGGBZz-ZKNw9sxOLVgvncIZvgwc547WBI7q5iqUawn3c0HvT5Obs4j1zWjlESRaIQAuMutITieWMXtIihBcMM-IiiAJLmICeFHMObAxawW7YivxAU5dzaNcNhbbtRSPqrFT9xBFJN0jn79cGW59CPWG3YGVHU2XoZ6uT_13XJw7tQSRr3Af3E",
+    "summary": "A noite mais visceral e comovente da história do thrash. Um calor infernal, parede de amplificadores Marshall rugindo a 118 dB e Tom Araya fitando a plateia em silêncio por quase 10 minutos após 'Angel of Death'.",
+    "storyTitle": "O Adeus dos Quatro Cavaleiros do Apocalipse",
+    "story": "Chegar ao Espaço das Américas naquela quarta-feira nublada carregava um peso fúnebre e glorioso ao mesmo tempo. Era a última vez que veríamos o Slayer no palco no Brasil. Trinta e cinco anos de história do metal extremo resumidos a duas horas de intensidade implacável e volume absurdo que literalmente fazia tremer as costelas de quem estava na pista premium.\n\nQuando as cortinas caíram com o holograma de cruzes invertidas e o riff cortante de Repentless ecoou, a pista virou uma arena de batalha. Kerry King estava com a corrente no cinto cuspindo palhetadas a 220 BPM, Paul Bostaph destroçando a bateria e Gary Holt honrando cada nota do saudoso Jeff Hanneman com o patch 'Heineken / Hanneman Still Reigning' na guitarra.",
+    "quote": "No encerramento de 'Angel of Death', a casa inteira gritava 'SLAYER!' como se o mundo fosse acabar ali mesmo. Quando todos saíram do palco, Tom Araya permaneceu em pé sozinho por quase 10 minutos, olhando nos olhos de cada fã na grade, visivelmente emocionado, e soltou: 'I will miss you guys... Muito obrigado'.",
+    "decibels": "118.4 dB",
+    "moshDuration": "90 minutos",
+    "companions": "Renato 'Mutilator', Diegão & Tiago",
+    "temperature": "34°C • Clima Infernal",
+    "verdict": "10/10 (Histórico e Imortal)",
+    "setlist": [
+      { "number": "01", "title": "Repentless", "tag": "Abertura" },
+      { "number": "02", "title": "Evil Has No Boundaries", "tag": "Show No Mercy (1983)" },
+      { "number": "03", "title": "World Painted Blood", "tag": "Riffs frenéticos" },
+      { "number": "04", "title": "Postmortem", "tag": "Reign in Blood Clássico" },
+      { "number": "05", "title": "Hate Worldwide", "tag": "Solo devastador Kerry" },
+      { "number": "06", "title": "War Ensemble", "tag": "Pista Abriu Geral" },
+      { "number": "07", "title": "Gemini", "tag": "Doom arrastado e pesado" },
+      { "number": "08", "title": "Disciple", "tag": "God Hates Us All!" },
+      { "number": "09", "title": "Mandatory Suicide", "tag": "South of Heaven (1988)" },
+      { "number": "10", "title": "Chemical Warfare", "tag": "Haunting the Chapel" },
+      { "number": "11", "title": "Payback", "tag": "Velocidade brutal" },
+      { "number": "12", "title": "Temptation", "tag": "Seasons in the Abyss" },
+      { "number": "13", "title": "Born of Fire", "tag": "Palhetadas insanas" },
+      { "number": "14", "title": "Seasons in the Abyss", "tag": "Coro monumental da plateia" },
+      { "number": "15", "title": "Hell Awaits", "tag": "Vozes do Inferno" },
+      { "number": "16", "title": "South of Heaven", "tag": "Riff lendário inconfundível" },
+      { "number": "17", "title": "Raining Blood", "tag": "Chuva de Sangue" },
+      { "number": "18", "title": "Black Magic", "tag": "1983 Thrash Anthem" },
+      { "number": "19", "title": "Dead Skin Mask", "tag": "Dance with the dead in my dreams..." },
+      { "number": "20", "title": "Angel of Death", "tag": "Clímax Definitivo" }
+    ],
+    "photos": [
+      {
+        "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuA_pjrEvENVqPLChuyt6F6-JFvtvF1136fOY1b5kW9uq2DUd8aFnXCdFY1da2rluJKl-KdWvzVnsskTI_54EgthPcjVHoV2YQU4UWGdfSV9Xzes_1ZrvPkov2LqqcvMJvVMCOf4adwjJe_rjeOQ708D0xRZlr90050T7BT0SGul6QfIOlBrZH6W7xR0yvR63SVyv_JbCEcdkPqpazbQfgSnb3vqcsPG4kjn996Rt8sK_TEG8Ce_17g",
+        "caption": "Grade Pista Premium"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCKbIsMNpw78mbcP1o1NdTgoEe5EMpcyrv6wfWZZ9qUmCwBTL8A1jYXPjXlhB7jTQ4sztRsZ0z5JWEcVZCQB2W9T77_dHf2hE1f-7EU1VOTNAolApfTSrrb34U-vw-VmJZNJt8yLcvMV0U7fIpcFqJLJ7Kif1waCGAxVyqLPd7JChFrb2z-W852dM0_PAf868m7mujdGj6ogZG5hieUKVQ5SKYGgpXNegSkWyqg2Z671BiTtnzGzrI",
+        "caption": "Ingresso & Palheta"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCb1cqp7FgjHwXaSGB2h4joLJcgoiutZH2SDtfMx_rdg8Jk7jGMI8sWsKkwOcQihKcCLf29lvcdZ3JgyoNqFy3zZuD3bLk2nG9L_mphD0DOaCYfJQmgpLQ2YIcj-gusymmmiGQBfYi0EbcNCFZ_ffbJPYDoBp2GS6TGCZydS9NRfgpJLgJTRFb9mXy9GNm9Ds5xye47lWB_4NUTjxgHeOXHAaJqQrvdMJHy9VsRaV4MfUoRKy5448Y",
+        "caption": "Tributo Hanneman"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Slayer - Live in São Paulo 2019 (Full Farewell Multicam 4K)",
+        "duration": "01:46:12",
+        "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuATYrlIdkZTFydALcpx7Gnhr37AD2KEXWjcsmTIBHm7jK1gTcNdaHCQVG1cDr9YJyuGHP16Dqwd9e2VcOibg5-buNZjRTKsKWNLhQPKKf-V4tVB9xgxik7AWiiczhWJsi-Jf8Q3VffKwP7TxE3HG2PxqwNuO6iw1Lx6SpPKTS6LVP32DbbfBFPN1KAHLqQR5uaK7sXVT9MwKkzQEKUrUDrDK7WxcgipJAE_fVPi_4o2rqOWCUsMR2c"
+      }
+    ],
+    "newsLinks": [
+      {
+        "title": "Slayer em São Paulo: A despedida avassaladora de uma lenda viva do metal",
+        "source": "Whiplash.net • Cobertura Especial",
+        "snippet": "Com um Espaço das Américas lotado até o teto, Tom Araya e Kerry King entregaram uma das apresentações mais selvagens e perfeitas já vistas na capital paulista."
+      },
+      {
+        "title": "O silêncio comovido de Tom Araya e a fúria eterna de 'Angel of Death'",
+        "source": "Combate Rock • UOL",
+        "snippet": "Poucos frontmen no mundo têm a coragem e a dignidade de encerrar a carreira no auge absoluto de sua potência técnica e agressividade."
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/slayer/2019/espaco-das-americas-sao-paulo-brazil-339c9489.html",
+    "googlePhotosUrl": "https://photos.google.com"
+  },
+  {
+    "id": "2024-12-06-iron-maiden-sepultura",
+    "year": "2024",
+    "title": "The Future Past Tour",
+    "headline": "Iron Maiden",
+    "subheadline": "+ Sepultura",
+    "tour": "The Future Past Tour",
+    "date": "2024-12-06",
+    "formattedDate": "06 Dez 2024",
+    "city": "São Paulo",
+    "state": "SP",
+    "country": "Brasil",
+    "venue": "Allianz Parque",
+    "bands": ["Iron Maiden", "Sepultura"],
+    "isFestival": false,
+    "festivalName": null,
+    "isMilestone": false,
+    "milestoneTag": "Allianz Parque",
+    "genre": "Heavy Clássico",
+    "badge": "15 Faixas Maiden",
+    "secondaryBadge": "Sepultura Farewell",
+    "tertiaryBadge": "45.000 Pessoas",
+    "coverImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuDAmMRdCZFGmjC8o77bjFwVhgpVv47hQDPmRbaJkkzxzbobOfF8K6z4kXuEaLzX8b8imxoPZQzIUuE-gUUAQzSG7phPWhSGDtFNlGSLsDybXiaQCNkYYJh9VjGqRYm7FsHPgA1efXw9Oh64ithi0CMBipKNQhn10x826NdGs5Ue2aSmGu26EJq8pb_IHKqBVwoaluPL3zh_IN1xsAosJvXJcdOfEJr_imx_Cet30IzNUesbXniN_jc",
+    "summary": "Combinação explosiva com a turnê de despedida do Sepultura abrindo a noite com Andreas Kisser e Greyson Nekrutman detonando no palco de arena.",
+    "storyTitle": "Festa Gigante do Heavy Metal no Allianz Parque",
+    "story": "Encontro histórico de duas potências. Sepultura abrindo como parte da sua 'Celebrating Life Through Death Farewell Tour', seguido pelo espetáculo futurista do Iron Maiden com 'Somewhere in Time' e 'Senjutsu'. Bruce Dickinson correndo pelo palco inteiro com energia inacreditável.",
+    "quote": "'Alexander the Great' tocada ao vivo pela primeira vez no Brasil, com o estádio inteiro em delírio.",
+    "decibels": "115.5 dB",
+    "moshDuration": "60 minutos",
+    "companions": "Família & Amigos",
+    "temperature": "24°C • Clima Excelente",
+    "verdict": "9.8/10 (Espetáculo Teatral e Pesado)",
+    "setlist": [
+      { "number": "01", "title": "Caught Somewhere in Time", "tag": "Somewhere in Time" },
+      { "number": "02", "title": "Stranger in a Strange Land", "tag": "Riff Eddie" },
+      { "number": "03", "title": "The Writing on the Wall", "tag": "Senjutsu" },
+      { "number": "04", "title": "Days of Future Past", "tag": "Energia pura" },
+      { "number": "05", "title": "Alexander the Great", "tag": "Histórico ao vivo" },
+      { "number": "06", "title": "Fear of the Dark", "tag": "Coro de 45 mil vozes" },
+      { "number": "07", "title": "Iron Maiden", "tag": "Eddie Gigante" },
+      { "number": "08", "title": "Hell on Earth", "tag": "Obra-prima" },
+      { "number": "09", "title": "The Trooper", "tag": "Bandeira britânica" },
+      { "number": "10", "title": "Wasted Years", "tag": "Encerramento triunfal" }
+    ],
+    "photos": [
+      {
+        "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDAmMRdCZFGmjC8o77bjFwVhgpVv47hQDPmRbaJkkzxzbobOfF8K6z4kXuEaLzX8b8imxoPZQzIUuE-gUUAQzSG7phPWhSGDtFNlGSLsDybXiaQCNkYYJh9VjGqRYm7FsHPgA1efXw9Oh64ithi0CMBipKNQhn10x826NdGs5Ue2aSmGu26EJq8pb_IHKqBVwoaluPL3zh_IN1xsAosJvXJcdOfEJr_imx_Cet30IzNUesbXniN_jc",
+        "caption": "Eddie futurista no Allianz Parque"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Iron Maiden - Alexander the Great (Live in São Paulo 2024)",
+        "duration": "08:45",
+        "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuDAmMRdCZFGmjC8o77bjFwVhgpVv47hQDPmRbaJkkzxzbobOfF8K6z4kXuEaLzX8b8imxoPZQzIUuE-gUUAQzSG7phPWhSGDtFNlGSLsDybXiaQCNkYYJh9VjGqRYm7FsHPgA1efXw9Oh64ithi0CMBipKNQhn10x826NdGs5Ue2aSmGu26EJq8pb_IHKqBVwoaluPL3zh_IN1xsAosJvXJcdOfEJr_imx_Cet30IzNUesbXniN_jc"
+      }
+    ],
+    "newsLinks": [
+      {
+        "title": "Tenho Mais Discos Que Amigos: Iron Maiden e Sepultura transformam Allianz Parque em templo do Metal",
+        "source": "TMDQA! (2024)",
+        "snippet": "Uma noite que uniu a despedida dos pioneiros do metal nacional com a precisão britânica da Donzela de Ferro."
+      }
+    ],
+    "setlistUrl": "https://www.setlist.fm/setlist/iron-maiden/2024/allianz-parque-sao-paulo-brazil-3ba1a0e4.html",
+    "googlePhotosUrl": "https://photos.google.com"
+  },
+  {
+    "id": "2026-04-18-metal-fest",
+    "year": "2026",
+    "title": "Metal Fest 2026",
+    "headline": "Metal Fest 2026",
+    "subheadline": "3 Dias de Festival",
+    "tour": "Reunião & Festivais Mundiais",
+    "date": "2026-04-18",
+    "formattedDate": "18 Abr 2026",
+    "city": "São Paulo",
+    "state": "SP",
+    "country": "Brasil",
+    "venue": "Autódromo de Interlagos",
+    "bands": ["Slayer", "Kreator", "Testament", "Anthrax", "Megadeth"],
+    "isFestival": true,
+    "festivalName": "Metal Fest",
+    "isMilestone": true,
+    "milestoneTag": "Confirmado",
+    "genre": "Festivais",
+    "badge": "3 Dias de Som",
+    "secondaryBadge": "Slayer Reunion",
+    "tertiaryBadge": "Interlagos Circuit",
+    "coverImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuDc-rH9nB6pL1BrI6ubBvBvHdbwMd0GrDXTASEARa4lQIwzeFUOsXVFQWmyoDHStyULTZpTz5y_Ygaum9EzVnhpnU0mmYs-BTrPRnMzYbsMGX0nmqmviYR1-JtG7_-0QbNJgG1o_lKpfV2CNX99rmZ1NO0_4OEnTpXNYMsg5PSl25RWF8QsC3BOaXX8RGTuj3OJbk-BQCA4w7RrUPtvUwmnZMKGidbrSPjg-zu9drfk5ar-IptMb2o",
+    "summary": "Turnê de reunião do Slayer anunciada para festivais seletos, Kreator, Testament e lendas mundiais do thrash metal. Contagem regressiva já ativada no cofre.",
+    "storyTitle": "A Espera pelo Retorno das Lendas",
+    "story": "Ingressos garantidos e contagem regressiva ativada para o maior encontro de metal pesado em solo paulistano. Expectativa máxima para ver o Slayer novamente reunido nos palcos mundiais com sua potência destrutiva.",
+    "quote": "O fogo nunca apaga. A reunião mais aguardada da década.",
+    "decibels": "120+ dB Estimado",
+    "moshDuration": "3 Dias Inteiros",
+    "companions": "A irmandade do metal",
+    "temperature": "A definir",
+    "verdict": "Aguardando (Alta Voltagem)",
+    "setlist": [
+      { "number": "01", "title": "Line-up em confirmação", "tag": "3 Palcos" },
+      { "number": "02", "title": "Headliners Anunciados", "tag": "Slayer • Kreator • Testament" }
+    ],
+    "photos": [
+      {
+        "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDc-rH9nB6pL1BrI6ubBvBvHdbwMd0GrDXTASEARa4lQIwzeFUOsXVFQWmyoDHStyULTZpTz5y_Ygaum9EzVnhpnU0mmYs-BTrPRnMzYbsMGX0nmqmviYR1-JtG7_-0QbNJgG1o_lKpfV2CNX99rmZ1NO0_4OEnTpXNYMsg5PSl25RWF8QsC3BOaXX8RGTuj3OJbk-BQCA4w7RrUPtvUwmnZMKGidbrSPjg-zu9drfk5ar-IptMb2o",
+        "caption": "Interlagos Circuit 2026"
+      }
+    ],
+    "videos": [],
+    "newsLinks": [
+      {
+        "title": "Metal Fest 2026 confirma datas e primeiras atrações em São Paulo",
+        "source": "Portal Metal Head (2026)",
+        "snippet": "Festival promete três dias históricos de celebração ao som pesado no circuito de Interlagos."
+      }
+    ],
+    "setlistUrl": "",
+    "googlePhotosUrl": ""
+  }
 ]
