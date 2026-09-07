@@ -1,0 +1,38 @@
+[
+    {
+        "id": "2026-03-04-acdc-sp",
+        "title": "AC/DC - PWR UP Tour",
+        "date": "2026-03-04",
+        "city": "São Paulo",
+        "state": "SP",
+        "country": "Brasil",
+        "venue": "Estádio Morumbi",
+        "bands": [
+            "AC/DC"
+        ],
+        "isFestival": false,
+        "festivalName": null,
+        "coverImage": "/assets/shows/2026-acdc-cover.jpg",
+        "story": "Relato detalhado com memórias, com quem fui, perrengues e impressões do show...",
+        "setlistUrl": "[https://www.setlist.fm/setlist/acdc/2026/](https://www.setlist.fm/setlist/acdc/2026/)...",
+        "media": [
+            {
+                "type": "youtube_embed",
+                "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)...",
+                "author": "Canal Externo / Fã",
+                "description": "Abertura gravada da pista"
+            },
+            {
+                "type": "google_photos_link",
+                "url": "[https://photos.app.goo.gl/](https://photos.app.goo.gl/)...",
+                "label": "Álbum completo no Google Fotos"
+            }
+        ],
+        "newsLinks": [
+            {
+                "title": "Crítica e cobertura do show no G1",
+                "url": "[https://g1.globo.com/](https://g1.globo.com/)..."
+            }
+        ]
+    }
+]
